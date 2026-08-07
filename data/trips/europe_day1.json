@@ -1,0 +1,43 @@
+{
+    "fps": 60,
+
+    "segments": [
+
+        {
+            "mode": "plane",
+
+            "from": {
+                "name":"New York",
+                "lat":40.7128,
+                "lon":-74.0060
+            },
+
+            "to": {
+                "name":"London",
+                "lat":51.5072,
+                "lon":-0.1276
+            },
+
+            "duration":12
+        },
+
+        {
+            "mode":"train",
+
+            "from":{
+                "name":"London",
+                "lat":51.5072,
+                "lon":-0.1276
+            },
+
+            "to":{
+                "name":"Paris",
+                "lat":48.8566,
+                "lon":2.3522
+            },
+
+            "duration":8
+        }
+
+    ]
+}
