@@ -1,0 +1,45 @@
+{
+    "EWR airport": {
+        "name": "EWR airport",
+        "lat": 40.6890641,
+        "lon": -74.1772549
+    },
+    "SNN airport": {
+        "name": "SNN airport",
+        "lat": 52.6986845,
+        "lon": -8.9215548
+    },
+    "University of Limerick": {
+        "name": "University of Limerick",
+        "lat": 52.6732581,
+        "lon": -8.5698097
+    },
+    "Samuel Beckett Bridge": {
+        "name": "Samuel Beckett Bridge",
+        "lat": 53.3469469,
+        "lon": -6.241317
+    },
+    "Trinity College Dublin": {
+        "name": "Trinity College Dublin",
+        "lat": 53.3437061,
+        "lon": -6.2544278
+    },
+    "DUB Airport": {
+        "name": "DUB Airport",
+        "lat": 53.4282916,
+        "lon": -6.2472741,
+        "display_name": "Dublin Airport, Swords Road, Airport ED, Dublin, Fingal, County Dublin, Leinster, \u00c9ire / Ireland"
+    },
+    "GVA airport": {
+        "name": "GVA airport",
+        "lat": 46.2377125,
+        "lon": 6.1079823,
+        "display_name": "A\u00e9roport international de Gen\u00e8ve, Chemin Auguste-Vilbert, Octagon, Le Grand-Saconnex, Gen\u00e8ve, 1218, Schweiz/Suisse/Svizzera/Svizra"
+    },
+    "Chamonix Sud": {
+        "name": "Chamonix Sud",
+        "lat": 45.9172777,
+        "lon": 6.8670009,
+        "display_name": "Chamonix Sud, Gare Routi\u00e8re Chamonix Sud, Les Bossons, Chamonix-Mont-Blanc, Bonneville, Haute-Savoie, Auvergne-Rh\u00f4ne-Alpes, France m\u00e9tropolitaine, 74400, France"
+    }
+}

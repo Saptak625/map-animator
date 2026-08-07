@@ -1,0 +1,56 @@
+fps: 15
+
+segments:
+
+  - mode: plane
+    duration: 15
+
+    from:
+      name: EWR airport
+      label: Newark Airport
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 8
+
+    to:
+      name: Samuel Beckett Bridge
+      label: Samuel Beckett Bridge
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Trinity College Dublin
+      label: Trinity College Dublin
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: GVA airport
+      label: Newark Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Chamonix Sud
+      label: Chamonix
