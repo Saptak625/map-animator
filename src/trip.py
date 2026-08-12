@@ -8,8 +8,8 @@ class Trip:
         with open(filename, "r") as f:
             self.data = json.load(f)
 
-
         self.fps = self.data["fps"]
+        self.dpi = self.data["dpi"]
         self.segments = self.data["segments"]
 
 
