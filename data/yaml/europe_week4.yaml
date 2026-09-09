@@ -1,0 +1,610 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#6F39AC"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: AMS airport
+      label: Amsterdam Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands
+      label: Rijksmuseum
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hans Brinker Budget Hostel, Kerkstraat 136-138, 1017 GR Amsterdam, Netherlands
+      label: Amsterdam Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Negen Straatjes, Amsterdam, Netherlands
+      label: Negen Straatjes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Royal Palace Amsterdam, Nieuwezijds Voorburgwal 147, 1012 RJ Amsterdam, Netherlands
+      label: Koninklijk Paleis Amsterdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Anne Frank House, Westermarkt 20, 1016 GV Amsterdam, Netherlands
+      label: Anne Frank Huis
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Van Gogh Museum, Museumplein 6, 1071 DJ Amsterdam, Netherlands
+      label: Van Gogh Museum
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.356469, 4.879625
+      label: The Concertgebouw
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.361013, 4.879106
+      label: Vondelpark
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hans Brinker Budget Hostel, Kerkstraat 136-138, 1017 GR Amsterdam, Netherlands
+      label: Amsterdam Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands
+      label: Rijksmuseum
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albert Cuyp Markt, Albert Cuypstraat 101, 1072 VV Amsterdam, Netherlands
+      label: Albert Cuyp Markt
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Sloterdijk, Amsterdam, Netherlands
+      label: Amsterdam Sloterdijk Station
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Gand-Dampoort / Gent-Dampoort, 9000 Gent, Belgium
+      label: Gent-Dampoort Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: St Bavo's Cathedral, Sint-Baafsplein 1, 9000 Gent, Belgium
+      label: St Bavo's Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Korenmarkt, 9000 Gent, Belgium
+      label: Korenmarkt
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hostel Uppelink, Sint-Michielsplein 21, 9000 Gent, Belgium
+      label: Ghent Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.054825, 3.720081
+      label: Korenlei
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Castle of the Counts, Sint-Veerleplein 11, 9000 Gent, Belgium
+      label: Gravensteen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.053769, 3.719473
+      label: Sint-Michielskerk
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.050564, 3.710529
+      label: Marengo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ghent University - Campus Aula, Universiteitstraat 4, 9000 Gent, Belgium
+      label: Universiteit Gent
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hostel Uppelink, Sint-Michielsplein 21, 9000 Gent, Belgium
+      label: Ghent Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Gent-Sint-Pieters, 9000 Gent, Belgium
+      label: Gent-Sint-Pieters Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Aachen Hauptbahnhof, Bahnhofpl. 1A, 52064 Aachen, Germany
+      label: Aachen Hauptbahnhof
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: University Library RWTH, Templergraben 61, 52062 Aachen, Germany
+      label: RWTH Aachen University
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Aachen Cathedral, Domhof 1, 52062 Aachen, Germany
+      label: Aachener Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Elisenbrunnen, Friedrich-Wilhelm-Platz, 52062 Aachen, Germany
+      label: Elisenbrunnen
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Aachen Hauptbahnhof, Bahnhofpl. 1A, 52064 Aachen, Germany
+      label: Aachen Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Cologne Cathedral, Domkloster 4, 50667 Köln, Germany
+      label: Kölner Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hohenzollern Bridge, Hohenzollernbrücke, 50679 Köln, Germany
+      label: Hohenzollernbrücke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.938291, 6.968222
+      label: Rheinboulevard
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.938585, 6.962189
+      label: Groß St. Martin
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Brauhaus FRÜH am Dom, Am Hof 12-18, 50667 Köln, Germany
+      label: Brauhaus Früh
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 50.948298, 6.887967
+      label: Müngersdorf S-Bahn Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: MEININGER Hotel Köln West, Stolberger Str. 347, 50933 Lindenthal, Germany
+      label: Köln Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 50.948298, 6.887967
+      label: Müngersdorf S-Bahn Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name:  Cologne Cathedral, Domkloster 4, 50667 Köln, Germany
+      label: Kölner Dom
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+  
+  - mode: train
+    duration: 4
+
+    to:
+      name: Frankfurt (Main) Hauptbahnhof, Am Hauptbahnhof 1, 60329 Frankfurt am Main, Germany
+      label: Frankfurt Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.110481, 8.682337
+      label: Römerberg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt Cathedral, Domplatz 1, 60311 Frankfurt am Main-Innenstadt I, Germany
+      label: Frankfurt Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alt-Sachsenhausen, Große Rittergasse 53, 60594 Frankfurt-Süd, Germany
+      label: Alt-Sachsenhausen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Dreikönigskirche, Sachsenhäuser Ufer, 60594 Frankfurt-Süd, Germany
+      label: Dreikönigskirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Eiserner Steg, 60594 Frankfurt-Süd, Germany
+      label: Eiserner Steg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.101553, 8.680967
+      label: Schweizer Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Südbahnhof, 60594 Frankfurt-Süd, Germany
+      label: Frankfurt Südbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Frankfurt Ostend, Hanauer Landstraße 207, 60314 Frankfurt am Main-Bornheim/Ostend, Germany
+      label: Frankfurt Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 50.108879, 8.673578
+      label: Frankfurt Willy-Brandt-Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Main Tower, Neue Mainzer Str. 52-58, 60311 Frankfurt am Main-Innenstadt I, Germany
+      label: Main Tower
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.101553, 8.680967
+      label: Schweizer Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Südbahnhof, 60594 Frankfurt-Süd, Germany
+      label: Frankfurt Südbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Frankfurt Ostend, Hanauer Landstraße 207, 60314 Frankfurt am Main-Bornheim/Ostend, Germany
+      label: Frankfurt Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Hauptbahnhof, Am Hauptbahnhof 1, 60329 Frankfurt am Main, Germany
+      label: Frankfurt Hauptbahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Aulagebäude der Universität Göttingen, Wilhelmsplatz 1, 37073 Göttingen, Germany
+      label: Aulagebäude der Universität Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Gänseliesel, Markt, 37073 Göttingen, Germany
+      label: Gänseliesel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.529752, 9.911934
+      label: Rondell der Nobelpreisträger
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Geismar Landstraße 11, 37083 Göttingen, Germany
+      label: Carl Friedrich Gauss Göttingen Observatory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Geismar Landstraße 11, 37083 Göttingen, Germany
+      label: Carl Friedrich Gauss Göttingen Observatory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Zum Szültenbürger / Göttingen, Prinzenstraße 7, 37073 Göttingen, Germany
+      label: Zum Szültenbürger
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Heidelberg Hauptbahnhof, Berliner Str. 2, 69120 Heidelberg, Germany
+      label: Heidelberg Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.412198, 8.712720
+      label: Karlsplatz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.409396, 8.714178
+      label: Schloss Heidelberg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Brückenaffe, Neckarstaden 66, 69117 Heidelberg-Altstadt, Germany
+      label: Brückenaffe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.414291, 8.709520
+      label: Alte Brücke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Heiliggeistkirche, Hauptstraße 189, 69117 Heidelberg, Germany
+      label: Heiliggeistkirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.410532, 8.698037
+      label: Heidelberg Hauptstraße
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Heidelberg Hauptbahnhof, Berliner Str. 2, 69120 Heidelberg, Germany
+      label: Heidelberg Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Stuttgart Hauptbahnhof, Arnulf-Klett-Platz 2, 70173 Stuttgart, Germany
+      label: Stuttgart Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.77853, 9.179886
+      label: Stuttgart Schlossplatz
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Stuttgart City, Rosensteinstraße 14/16, 70191 Nord, Germany
+      label: Stuttgart Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Porsche Museum, Porscheplatz 1, 70435 Stuttgart, Germany
+      label: Porsche Museum
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: STR Airport, Flughafenstraße 32, 70629 Stuttgart, Germany
+      label: Stuttgart Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

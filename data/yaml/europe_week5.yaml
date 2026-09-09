@@ -1,0 +1,617 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#0000C2"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: HAM airport
+      label: Hamburg Airport
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Lübeck Hauptbahnhof, Am Bahnhof 4, 23558 Lübeck, Germany
+      label: Lübeck Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.866271, 10.679892
+      label: Museum Holstentor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Marienkirche, Marienkirchhof 1, 23552 Lübeck, Germany
+      label: Marienkirche
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Hansestadt Lübeck, Breite Str. 62, 23552 Lübeck-Lübecker Altstadt, Germany
+      label: Hansestadt Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 23552, Rehderbrücke, 23552 Lübeck, Germany
+      label: Jan Gubi Wiese
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lübeck Cathedral, Mühlendamm 2-6, 23552 Lübeck, Germany
+      label: Lübeck Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.865744, 10.679891
+      label: Salzspeicher Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.866558, 10.685692
+      label: Café Niederegger
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.870846, 10.688449
+      label: St.-Jakobi-Kirche Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.874074, 10.691163
+      label: Burgtor in Lübeck
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Musik- und Kongresshalle Lübeck, Willy-Brandt-Allee 10, 23554 Lübeck, Germany
+      label: Musik- und Kongresshalle Lübeck
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St. Peter's Church, Königstraße 104, 23552 Lübeck, Germany
+      label: St. Peter's Church
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lübeck Hauptbahnhof, Am Bahnhof 4, 23558 Lübeck, Germany
+      label: Lübeck Hauptbahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Büchen, 21514 Büchen, Germany
+      label: Büchen Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 53.896566, 11.469071
+      label: Wismar Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schiffbauerdamm 3, 23966 Wismar, Germany
+      label: Fischfachgeschäft Seeperle Wismar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St.-Georgen-Kirchhof 1A, 23966 Wismar, Germany
+      label: St.-Georgen-Kirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St.-Marien-Kirchhof 1, 23966 Wismar, Germany
+      label: St.-Marien-Kirchturm
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.891406, 11.466305
+      label: Marktplatz Wismar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.896347, 11.461431
+      label: Wassertor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.899400, 11.457194
+      label: Alter Hafen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.896566, 11.469071
+      label: Wismar Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Schwerin Mitte, 19053 Schwerin, Germany
+      label: Schwerin Mitte Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.625026, 11.417898
+      label: Schwerin Castle
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.626111, 11.419063
+      label: Bar Pier-7
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.637654, 11.410112
+      label: The Avalon Hotel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.625026, 11.417898
+      label: Schwerin Castle
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.623496, 11.417819
+      label: Lennéstraße Alte Brücke
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.624028, 11.420102
+      label: Orangerie Schwerin
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: 53.624409, 11.420203
+      label: Grotte im Schlossgarten
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.629359, 11.414713
+      label: St.-Marien-Dom zu Schwerin
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.630865, 11.412281
+      label: Südufer Pfaffenteich Treppe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schwerin Hauptbahnhof, 19053 Schwerin, Germany
+      label: Schwerin Hauptbahnhof
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Berlin Hauptbahnhof, Europaplatz 1, 10557 Berlin, Germany
+      label: Berlin Hauptbahnhof
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: Brandenburg Gate, Pariser Platz, 10117 Berlin, Germany
+      label: Brandenburger Tor
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Denkmal für die ermordeten Juden Europas, Cora-Berliner-Straße 1, 10117 Berlin, Germany
+      label: Denkmal für die ermordeten Juden Europas
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.519511, 13.372746
+      label: Bundestag U-Bahn Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Kochstraße U-Bahn Station, 10969 Berlin, Germany
+      label: Kochstraße U-Bahn Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Checkpoint Charlie, Friedrichstraße 43-45, 10117 Berlin, Germany
+      label: Checkpoint Charlie
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Kochstraße U-Bahn Station, 10969 Berlin, Germany
+      label: Kochstraße U-Bahn Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 52.519511, 13.372746
+      label: Bundestag U-Bahn Station
+  
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Reichstag Building, Platz der Republik 1, 11011 Berlin, Germany
+      label: Reichstag Building
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Belushi's Berlin (Mitte), Ziegelstraße 28, 10117 Berlin, Germany
+      label: Belushi's Berlin
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: a&o Hostel Berlin Friedrichshain, Boxhagener Str. 73, 10245 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Berlin Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Potsdam Hauptbahnhof, Breite Str. 1, 14467 Potsdam, Germany
+      label: Potsdam Hauptbahnhof
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Maulbeerallee 5A, 14469 Potsdam-Westliche Vorstadt, Germany
+      label: Historische Mühle von Sanssouci
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Schloss Sanssouci, Maulbeerallee 1, 14469 Potsdam, Germany
+      label: Schloss Sanssouci
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Im Park Sanssouci 4, 14469 Potsdam-Westliche Vorstadt, Germany
+      label: Bildergalerie von Sanssouci
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 52.401329, 13.016499
+      label: Neues Palais
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 52.400407, 13.031936
+      label: Chinesisches Haus im Park Sanssouci
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 52.401079, 13.043694
+      label: Friedenskirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.399503, 13.047937
+      label: Brandenburger Tor in Potsdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.398736, 13.058167
+      label: Platz der Einheit
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Meierei Potsdam, Im Neuen Garten 10, 14469 Potsdam-Nördliche Vorstadt, Germany
+      label: Meierei Potsdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schloss Cecilienhof, Im Neuen Garten 11, 14469 Potsdam-Nördliche Vorstadt, Germany
+      label: Schloss Cecilienhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.420965, 13.077383
+      label: Eremitage
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 52.413533, 13.090572
+      label: Glienicker Brücke
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 52.398736, 13.058167
+      label: Platz der Einheit
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.403481, 13.057872
+      label: Nauen Gate
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Potsdamer Platz, 10785 Berlin, Germany
+      label: Potsdamer Platz
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Warshauer Straße U-Bahn Station, 10243 Berlin, Germany
+      label: Warshauer Straße U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.503710, 13.443569
+      label: East Side Gallery
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Holzmarktstraße 25, 10243 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Holzmarkt
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Schlesische Str. 5, 10997 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Maison Umami
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Warschauer Straße U-Bahn Station, 10243 Berlin, Germany
+      label: Warschauer Straße U-Bahn Station
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: a&o Hostel Berlin Friedrichshain, Boxhagener Str. 73, 10245 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Berlin Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Hackescher Markt U-Bahn Station, 10178 Berlin, Germany
+      label: Hackescher Markt U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.520291, 13.397995
+      label: Neues Museum
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 52.520660, 13.398707
+      label: Alte Nationalgalerie
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 52.518924, 13.399346
+      label: Lustgarten
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Berliner Dom, Am Lustgarten, 10178 Berlin, Germany
+      label: Berliner Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Berliner Fernsehturm, Panoramastraße 1A, 10178 Berlin, Germany
+      label: Berliner Fernsehturm
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Alexanderplatz, Dircksenstraße 2, 10179 Berlin, Germany
+      label: Alexanderplatz U-Bahn Station
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Leinestraße U-Bahn Station, 10969 Berlin, Germany
+      label: Leinestraße U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.476445, 13.417568
+      label: Tempelhofer Feld
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Boddinstr., 12049 Berlin, Germany
+      label: Boddinstraße U-Bahn Station
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Berlin Hauptbahnhof, Europaplatz 1, 10557 Berlin, Germany
+      label: Berlin Hauptbahnhof
+    
+  - mode: train
+    duration: 3
+
+    to:
+      name: BER airport, 12529 Schönefeld, Germany
+      label: Berlin Brandenburg Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

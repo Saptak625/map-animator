@@ -1,8 +1,8 @@
+import os
 import time
-
 import numpy as np
 import requests
-
+import polyline
 from geographiclib.geodesic import Geodesic
 
 from geometry import project
@@ -10,29 +10,21 @@ from geometry import project
 
 class RouteGenerator:
 
-    # --------------------------------------------------
-    # Public OSRM demo server. It's free and requires no API key,
-    # but it's rate-limited and explicitly not meant for heavy or
-    # production traffic -- point this at a self-hosted OSRM
-    # instance if you're generating a lot of trips.
-    # --------------------------------------------------
+    # ============================================================
+    # Configuration
+    # ============================================================
+
+    GOOGLE_ROUTES_URL = (
+        "https://routes.googleapis.com/directions/v2:computeRoutes"
+    )
+
+    GOOGLE_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 
     OSRM_BASE_URL = "https://router.project-osrm.org"
 
-    # OSRM ships "driving", "walking", and "cycling" profiles out of
-    # the box -- there's no public rail-routing profile available.
-    #
-    # "bus" -> "driving": buses run on the road network, so this is
-    #     a genuinely accurate stand-in.
-    #
-    # "train" -> "driving": this is a real approximation, not an
-    #     accurate one. Rail corridors *often* roughly parallel major
-    #     roads (valleys, city approaches), so this tends to look
-    #     more plausible than a straight line, but it is not real
-    #     track geometry. Swap this to a dedicated rail/transit
-    #     routing provider here if you need accurate train routes.
     OSRM_PROFILES = {
         "walk": "foot",
+        "bike": "cycling",
         "bus": "driving",
         "train": "driving",
     }
@@ -40,12 +32,30 @@ class RouteGenerator:
     REQUEST_RETRIES = 3
     REQUEST_RETRY_DELAY = 1.5
 
+    GOOGLE_TIMEOUT = 20
+    OSRM_TIMEOUT = 15
 
-    def __init__(self, request_timeout=10):
+    # ============================================================
+    # Initialization
+    # ============================================================
+
+    def __init__(self, request_timeout=20):
 
         self.geodesic = Geodesic.WGS84
+
         self.request_timeout = request_timeout
 
+        if self.GOOGLE_API_KEY:
+            print("Google Routes API: ENABLED")
+        else:
+            print(
+                "Google Routes API: DISABLED "
+                "(GOOGLE_MAPS_API_KEY not set)"
+            )
+
+    # ============================================================
+    # Public interface
+    # ============================================================
 
     def generate(
         self,
@@ -58,6 +68,16 @@ class RouteGenerator:
         start = segment["from"]
         end = segment["to"]
 
+        print(
+            f"\nRouting {mode}: "
+            f"{start.get('name', '?')} -> "
+            f"{end.get('name', '?')}"
+        )
+
+        # --------------------------------------------------------
+        # Plane
+        # --------------------------------------------------------
+
         if mode == "plane":
 
             return self.plane_route(
@@ -66,25 +86,320 @@ class RouteGenerator:
                 points
             )
 
-        elif mode in self.OSRM_PROFILES:
+        # --------------------------------------------------------
+        # Google routing
+        # --------------------------------------------------------
 
-            return self.planned_route(
-                start,
-                end,
-                mode,
-                points
-            )
+        # if self.GOOGLE_API_KEY and mode == "walk":
+        if self.GOOGLE_API_KEY and mode in ["walk", "bike", "bus", "train", "car"]:
+            try:
 
-        else:
+                return self.google_route(
+                    start,
+                    end,
+                    mode,
+                    points
+                )
+
+            except Exception as exc:
+
+                print(
+                    f"Google routing failed for {mode} leg: "
+                    f"{exc}"
+                )
+
+        # --------------------------------------------------------
+        # OSRM fallback
+        # --------------------------------------------------------
+
+        if mode in self.OSRM_PROFILES: # Attempt to use OSRM for walk, bike, bus/train.
+
+            try:
+
+                print(
+                    f"Falling back to OSRM for {mode}..."
+                )
+
+                return self.planned_route_osrm(
+                    start,
+                    end,
+                    mode,
+                    points
+                )
+
+            except Exception as exc:
+
+                print(
+                    f"OSRM routing also failed: {exc}"
+                )
+
+        # --------------------------------------------------------
+        # Last resort
+        # --------------------------------------------------------
+
+        print(
+            f"WARNING: Using straight-line fallback for "
+            f"{mode}: "
+            f"{start.get('name', '?')} -> "
+            f"{end.get('name', '?')}"
+        )
+
+        return self.linear_route(
+            start,
+            end,
+            points
+        )
+
+    # ============================================================
+    # Google Routes API
+    # ============================================================
+
+    def google_route(
+        self,
+        start,
+        end,
+        mode,
+        points
+    ):
+
+        # --------------------------------------------------------
+        # Map our modes onto Google's travel modes.
+        # --------------------------------------------------------
+
+        google_modes = {
+            "walk": "WALK",
+            "bike": "BICYCLE",
+            "bus": "TRANSIT",
+            "train": "TRANSIT",
+            "car": "DRIVE",
+        }
+
+        if mode not in google_modes:
 
             raise ValueError(
-                f"Unknown mode {mode}"
+                f"Google routing does not support mode '{mode}'"
             )
 
+        travel_mode = google_modes[mode]
 
-    # --------------------------------------------------
+        # --------------------------------------------------------
+        # Request body.
+        # --------------------------------------------------------
+
+        body = {
+
+            "origin": {
+                "location": {
+                    "latLng": {
+                        "latitude": start["lat"],
+                        "longitude": start["lon"],
+                    }
+                }
+            },
+
+            "destination": {
+                "location": {
+                    "latLng": {
+                        "latitude": end["lat"],
+                        "longitude": end["lon"],
+                    }
+                }
+            },
+
+            "travelMode": travel_mode,
+
+            "computeAlternativeRoutes": False,
+
+        }
+
+        # --------------------------------------------------------
+        # Transit-specific configuration.
+        #
+        # Google transit can return combinations of walking,
+        # buses, trains, etc. We can tell it which modes we
+        # prefer, but Google may still use another transit mode
+        # when that produces the better route.
+        # --------------------------------------------------------
+
+        if mode == "train":
+
+            body["transitPreferences"] = {
+                "allowedTravelModes": [
+                    "TRAIN",
+                    "RAIL",
+                    "SUBWAY",
+                    "LIGHT_RAIL",
+                ]
+            }
+
+        elif mode == "bus":
+
+            body["transitPreferences"] = {
+                "allowedTravelModes": [
+                    "BUS",
+                ]
+            }
+
+        # --------------------------------------------------------
+        # Headers.
+        # --------------------------------------------------------
+
+        headers = {
+
+            "Content-Type": "application/json",
+
+            "X-Goog-Api-Key":
+                self.GOOGLE_API_KEY,
+
+            # Only request the fields we actually need.
+            #
+            # This is important with Google Routes because field
+            # masks control what is returned and help avoid
+            # unnecessarily expensive responses.
+            "X-Goog-FieldMask":
+                "routes.polyline.encodedPolyline,"
+                "routes.distanceMeters,"
+                "routes.duration",
+
+        }
+
+        # --------------------------------------------------------
+        # Request with retries.
+        # --------------------------------------------------------
+
+        last_error = None
+
+        for attempt in range(self.REQUEST_RETRIES):
+
+            try:
+
+                response = requests.post(
+                    self.GOOGLE_ROUTES_URL,
+                    headers=headers,
+                    json=body,
+                    timeout=self.GOOGLE_TIMEOUT,
+                )
+
+                response.raise_for_status()
+
+                data = response.json()
+
+                routes = data.get("routes")
+
+                if not routes:
+
+                    raise RuntimeError(
+                        "Google returned no routes"
+                    )
+
+                encoded = (
+                    routes[0]
+                    .get("polyline", {})
+                    .get("encodedPolyline")
+                )
+
+                if not encoded:
+
+                    raise RuntimeError(
+                        "Google route contained no polyline"
+                    )
+
+                # ------------------------------------------------
+                # Decode Google's encoded polyline.
+                #
+                # polyline.decode() returns:
+                #
+                # [(lat, lon), ...]
+                # ------------------------------------------------
+
+                coordinates = polyline.decode(
+                    encoded
+                )
+
+                if len(coordinates) < 2:
+
+                    raise RuntimeError(
+                        "Google returned fewer than two "
+                        "route coordinates"
+                    )
+
+                print(
+                    f"Google route successful: "
+                    f"{len(coordinates)} geometry points"
+                )
+
+                distance = routes[0].get(
+                    "distanceMeters"
+                )
+
+                duration = routes[0].get(
+                    "duration"
+                )
+
+                if distance is not None:
+
+                    print(
+                        f"    Distance: "
+                        f"{distance / 1000:.2f} km"
+                    )
+
+                if duration:
+
+                    print(
+                        f"    Duration: "
+                        f"{duration}"
+                    )
+
+                # ------------------------------------------------
+                # Google -> projected coordinates.
+                # ------------------------------------------------
+
+                projected = [
+
+                    project(
+                        lon,
+                        lat
+                    )
+
+                    for lat, lon in coordinates
+
+                ]
+
+                return self._resample(
+                    projected,
+                    points
+                )
+
+            except Exception as exc:
+
+                last_error = exc
+
+                if attempt < self.REQUEST_RETRIES - 1:
+
+                    wait = (
+                        self.REQUEST_RETRY_DELAY
+                        *
+                        (2 ** attempt)
+                    )
+
+                    print(
+                        f"Google request failed "
+                        f"(attempt {attempt + 1}/"
+                        f"{self.REQUEST_RETRIES}): "
+                        f"{exc}"
+                    )
+
+                    print(
+                        f"Retrying in {wait:.1f}s..."
+                    )
+
+                    time.sleep(wait)
+
+        raise last_error
+
+    # ============================================================
     # Plane route
-    # --------------------------------------------------
+    # ============================================================
 
     def plane_route(
         self,
@@ -108,8 +423,10 @@ class RouteGenerator:
         for i in range(points):
 
             distance = (
-                line.s13 *
-                i /
+                line.s13
+                *
+                i
+                /
                 (points - 1)
             )
 
@@ -117,29 +434,20 @@ class RouteGenerator:
                 distance
             )
 
-            lon = pos["lon2"]
-            lat = pos["lat2"]
-
             route.append(
                 project(
-                    lon,
-                    lat
+                    pos["lon2"],
+                    pos["lat2"]
                 )
             )
 
         return route
 
+    # ============================================================
+    # OSRM fallback
+    # ============================================================
 
-    # --------------------------------------------------
-    # Real, path-following route (walk / bus / train)
-    #
-    # Queries OSRM for actual road/path geometry between the two
-    # endpoints. Falls back to a straight line if the routing
-    # request fails or returns nothing usable, so a network hiccup
-    # degrades gracefully instead of crashing the whole pipeline.
-    # --------------------------------------------------
-
-    def planned_route(
+    def planned_route_osrm(
         self,
         start,
         end,
@@ -149,41 +457,37 @@ class RouteGenerator:
 
         profile = self.OSRM_PROFILES[mode]
 
-        try:
+        coordinates = self._fetch_osrm_route(
+            start,
+            end,
+            profile
+        )
 
-            waypoints = self._fetch_osrm_route(
-                start,
-                end,
-                profile
+        if len(coordinates) < 2:
+
+            raise RuntimeError(
+                "OSRM returned no usable geometry"
             )
-
-        except Exception as exc:
-
-            print(
-                f"Route planning failed for {mode} leg "
-                f"({start.get('name', '?')} -> {end.get('name', '?')}): {exc}. "
-                f"Falling back to a straight-line route."
-            )
-
-            return self.linear_route(start, end, points)
-
-        if len(waypoints) < 2:
-
-            print(
-                f"Route planning returned no usable path for {mode} leg "
-                f"({start.get('name', '?')} -> {end.get('name', '?')}). "
-                f"Falling back to a straight-line route."
-            )
-
-            return self.linear_route(start, end, points)
 
         projected = [
-            project(lon, lat)
-            for lon, lat in waypoints
+
+            project(
+                lon,
+                lat
+            )
+
+            for lon, lat in coordinates
+
         ]
 
-        return self._resample(projected, points)
+        return self._resample(
+            projected,
+            points
+        )
 
+    # ============================================================
+    # OSRM request
+    # ============================================================
 
     def _fetch_osrm_route(
         self,
@@ -193,66 +497,85 @@ class RouteGenerator:
     ):
 
         url = (
-            f"{self.OSRM_BASE_URL}/route/v1/{profile}/"
-            f"{start['lon']},{start['lat']};{end['lon']},{end['lat']}"
+            f"{self.OSRM_BASE_URL}/route/v1/"
+            f"{profile}/"
+            f"{start['lon']},{start['lat']};"
+            f"{end['lon']},{end['lat']}"
         )
 
         params = {
+
             "overview": "full",
+
             "geometries": "geojson",
+
+        }
+
+        headers = {
+
+            "User-Agent":
+                "trip-animator/1.0"
+
         }
 
         last_error = None
 
-        for attempt in range(self.REQUEST_RETRIES):
+        for attempt in range(
+            self.REQUEST_RETRIES
+        ):
 
             try:
 
                 response = requests.get(
                     url,
                     params=params,
-                    timeout=self.request_timeout,
-                    headers={"User-Agent": "trip-animator/1.0"}
+                    headers=headers,
+                    timeout=self.OSRM_TIMEOUT,
                 )
 
                 response.raise_for_status()
 
                 data = response.json()
 
-                if data.get("code") != "Ok" or not data.get("routes"):
+                if (
+                    data.get("code") != "Ok"
+                    or
+                    not data.get("routes")
+                ):
+
                     raise RuntimeError(
-                        f"OSRM returned no route (code={data.get('code')})"
+                        "OSRM returned no route "
+                        f"(code={data.get('code')})"
                     )
 
-                # GeoJSON LineString coordinates are [lon, lat] pairs
-                coordinates = data["routes"][0]["geometry"]["coordinates"]
+                coordinates = (
+                    data["routes"][0]
+                    ["geometry"]
+                    ["coordinates"]
+                )
 
-                return [(lon, lat) for lon, lat in coordinates]
+                return [
+                    (lon, lat)
+                    for lon, lat in coordinates
+                ]
 
             except Exception as exc:
 
                 last_error = exc
 
-                # Only worth retrying on transient issues (timeouts,
-                # connection errors, 5xx) -- back off briefly and
-                # try again rather than hammering the demo server.
                 if attempt < self.REQUEST_RETRIES - 1:
-                    time.sleep(self.REQUEST_RETRY_DELAY)
+
+                    time.sleep(
+                        self.REQUEST_RETRY_DELAY
+                        *
+                        (2 ** attempt)
+                    )
 
         raise last_error
 
-
-    # --------------------------------------------------
-    # Resample a route into `points` points evenly spaced by arc
-    # length.
-    #
-    # Raw routing-API geometry is NOT evenly spaced -- it's dense on
-    # curves and sparse on straightaways. The rest of the pipeline
-    # (CameraController, the main frame loop) indexes into the route
-    # assuming route[i] for evenly-stepped i corresponds to roughly
-    # even progress along the trip, so this step is what makes a
-    # planned route animation-ready, not just a cosmetic detail.
-    # --------------------------------------------------
+    # ============================================================
+    # Resampling
+    # ============================================================
 
     def _resample(
         self,
@@ -260,31 +583,87 @@ class RouteGenerator:
         points
     ):
 
-        xs = np.array([p[0] for p in waypoints], dtype=float)
-        ys = np.array([p[1] for p in waypoints], dtype=float)
+        xs = np.array(
+            [p[0] for p in waypoints],
+            dtype=float
+        )
 
-        segment_lengths = np.hypot(np.diff(xs), np.diff(ys))
+        ys = np.array(
+            [p[1] for p in waypoints],
+            dtype=float
+        )
 
-        cumulative = np.concatenate(([0.0], np.cumsum(segment_lengths)))
+        # Remove consecutive duplicate coordinates.
+        keep = np.ones(
+            len(xs),
+            dtype=bool
+        )
+
+        if len(xs) > 1:
+
+            keep[1:] = (
+                (np.diff(xs) != 0)
+                |
+                (np.diff(ys) != 0)
+            )
+
+        xs = xs[keep]
+        ys = ys[keep]
+
+        if len(xs) == 1:
+
+            return [
+                (xs[0], ys[0])
+            ] * points
+
+        segment_lengths = np.hypot(
+            np.diff(xs),
+            np.diff(ys)
+        )
+
+        cumulative = np.concatenate(
+            (
+                [0.0],
+                np.cumsum(segment_lengths)
+            )
+        )
 
         total_length = cumulative[-1]
 
         if total_length <= 0:
-            # Degenerate route (start basically equals end) --
-            # nothing meaningful to interpolate along.
-            return [(xs[0], ys[0])] * points
 
-        sample_distances = np.linspace(0.0, total_length, points)
+            return [
+                (xs[0], ys[0])
+            ] * points
 
-        sampled_x = np.interp(sample_distances, cumulative, xs)
-        sampled_y = np.interp(sample_distances, cumulative, ys)
+        sample_distances = np.linspace(
+            0.0,
+            total_length,
+            points
+        )
 
-        return list(zip(sampled_x.tolist(), sampled_y.tolist()))
+        sampled_x = np.interp(
+            sample_distances,
+            cumulative,
+            xs
+        )
 
-    # --------------------------------------------------
-    # Linear fallback -- used when route planning is unavailable
-    # or fails for a given leg.
-    # --------------------------------------------------
+        sampled_y = np.interp(
+            sample_distances,
+            cumulative,
+            ys
+        )
+
+        return list(
+            zip(
+                sampled_x.tolist(),
+                sampled_y.tolist()
+            )
+        )
+
+    # ============================================================
+    # Straight-line fallback
+    # ============================================================
 
     def linear_route(
         self,
@@ -292,8 +671,6 @@ class RouteGenerator:
         end,
         points
     ):
-
-        route = []
 
         start_xy = project(
             start["lon"],
@@ -305,6 +682,8 @@ class RouteGenerator:
             end["lat"]
         )
 
+        route = []
+
         for i in range(points):
 
             t = i / (points - 1)
@@ -312,7 +691,8 @@ class RouteGenerator:
             x = (
                 start_xy[0]
                 +
-                t *
+                t
+                *
                 (
                     end_xy[0]
                     -
@@ -323,7 +703,8 @@ class RouteGenerator:
             y = (
                 start_xy[1]
                 +
-                t *
+                t
+                *
                 (
                     end_xy[1]
                     -
@@ -332,10 +713,7 @@ class RouteGenerator:
             )
 
             route.append(
-                (
-                    x,
-                    y
-                )
+                (x, y)
             )
 
         return route

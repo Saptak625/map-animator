@@ -42,7 +42,7 @@ def render_and_save_frame(args):
     - cities: The list of cities to render.
     - mode: The current mode of transportation.
     - completed_routes: The list of completed routes.
-    - arrived: Whether the traveler has arrived at the destination.
+    - cursor_colors: The list of cursor colors.
     - show_labels: Whether to show city labels.
     - show_cursor: Whether to show the cursor.
     - show_current_route: Whether to show the current route.
@@ -60,7 +60,7 @@ def render_and_save_frame(args):
         cities,
         mode,
         completed_routes,
-        arrived,
+        cursor_colors,
         show_labels,
         show_cursor,
         show_current_route
@@ -82,7 +82,7 @@ def render_and_save_frame(args):
         cities=cities,
         mode=mode,
         completed_routes=completed_routes,
-        arrived=arrived,
+        cursor_colors=cursor_colors,
         show_labels=show_labels,
         show_cursor=show_cursor,
         show_current_route=show_current_route,

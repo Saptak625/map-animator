@@ -1,0 +1,714 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#DBA800"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 6
+    to:
+      name: Stockholm ARN airport
+      label: Stockholm Arlanda Airport
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Gamla Stan, Stockholm, Sweden
+      label: Gamla Stan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Svartmangatan 16, 111 29 Stockholm, Sweden
+      label: Tyska kyrkan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nobelprismuseet, Stortorget 2, 111 29 Stockholm, Sweden
+      label: Nobelprismuseet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Kungliga slottet, 111 30 Stockholm, Sweden
+      label: Kungliga slottet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Kungliga Operan, Gustav Adolfs torg 2, 103 22 Stockholm, Sweden
+      label: Kungliga Operan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Riksdagshuset, 111 30 Stockholm, Sweden
+      label: Riksdagshuset
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Evert Taubes Terrass, 111 28 Stockholm, Sweden
+      label: Evert Taubes Terrass
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Avicii Arena, 121 77 Stockholm, Sweden
+      label: Avicii Arena
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: ARN airport
+      label: Stockholm Arlanda Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: BCN airport
+      label: Barcelona El Prat Airport
+  
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica de la Sagrada Família, Carrer de Mallorca, 401, Eixample, 08013 Barcelona, Spain
+      label: Basilica de la Sagrada Família
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa de les Punxes, Carrer de Rosselló, 241, Eixample, 08036 Barcelona, Spain
+      label: Casa de les Punxes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa Milà, Carrer de Provença, 261-265, Eixample, 08008 Barcelona, Spain
+      label: Casa Milà
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa Batlló, Passeig de Gràcia, 43, Eixample, 08007 Barcelona, Spain
+      label: Casa Batlló
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaça de Catalunya, 08002 Barcelona, Spain
+      label: Plaça de Catalunya
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Barcelona, Pla de la Seu, s/n, 08002 Barcelona, Spain
+      label: Catedral de Barcelona
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Pl. del Rei, Ciutat Vella, 08002 Barcelona, Spain
+      label: Plaça del Rei
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Playa de la Barceloneta, Passeig Marítim de la Barceloneta, 08003 Barcelona, Spain
+      label: Playa de la Barceloneta
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Arc de Triomf, Passeig de Lluís Companys, 08003 Barcelona, Spain
+      label: Arc de Triomf
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Mercat de la Boqueria, La Rambla, 91, 08001 Barcelona, Spain
+      label: Mercat de la Boqueria
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Parc de la Ciutadella, Passeig de Picasso, 21, 08003 Barcelona, Spain
+      label: Parc de la Ciutadella
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Barcelona Sants Station, Plaça dels Països Catalans, s/n, 08014 Barcelona, Spain
+      label: Barcelona Sants Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Zaragoza Delicias Station, Zaragoza, Spain
+      label: Zaragoza Delicias Station
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 41.656437, -0.878639
+      label: Catedral-Basílica de Nuestra Señora del Pilar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 41.654870, -0.876226
+      label: Catedral del Salvador-La Seo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Puente de Piedra, Zaragoza, Spain
+      label: Puente de Piedra
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: El tubo, C. de la Libertad, 12, Casco Antiguo, 50003 Zaragoza, Spain
+      label: El tubo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Palacio de la Aljafería, Calle de los Diputados, s/n, 50004 Zaragoza, Spain
+      label: Palacio de la Aljafería
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Zaragoza Delicias Station, Zaragoza, Spain
+      label: Zaragoza Delicias Station
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Estación de Avenida de América, Chamartín, 28002 Madrid, Spain
+      label: Estación de Avenida de América
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Tirso de Molina, Madrid, Spain
+      label: Tirso de Molina
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza Mayor, Pl. Mayor, Centro, 28012 Madrid, Spain
+      label: Plaza Mayor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.418835, -3.697003
+      label: Gran Vía
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 40.420303, -3.697859
+      label: El tigre Sidra Bar
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+  
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lavapiés, Madrid, Spain
+      label: Lavapiés Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Madrid, Estación de Plaza Elíptica, 28045 Madrid, Spain
+      label: Estación de Plaza Elíptica
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Estación de Autobuses de Toledo, Av. Castilla- La Mancha, 5, 45003 Toledo, Spain
+      label: Estación de Autobuses de Toledo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mezquita del Cristo de la Luz, C. Cristo de la Luz, 22, 45002 Toledo, Spain
+      label: Mezquita del Cristo de la Luz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral Primada de Toledo, Calle Cardenal Cisneros, 1, 45002 Toledo, Spain
+      label: Santa Iglesia Catedral Primada de Santa María
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Iglesia de Santo Tomé, C. de Santo Tomé, 5, 45002 Toledo, Spain
+      label: Iglesia de Santo Tomé
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Sinagoga de Santa María La Blanca, C. de Samuel Leví, 2, 45002 Toledo, Spain
+      label: Sinagoga de Santa María La Blanca
+
+  - mode: walk
+    duration: 3
+    to:
+      name: Monasterio de San Juan de los Reyes, C. de los Reyes Católicos, 17, 45002 Toledo, Spain
+      label: Monasterio de San Juan de los Reyes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alcázar de Toledo, Plaza del Alcázar, s/n, 45001 Toledo, Spain
+      label: Alcázar de Toledo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Puente de Alcántara, Toledo, Spain
+      label: Puente de Alcántara
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mirador del Valle, Toledo, Spain
+      label: Mirador del Valle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Estación de Autobuses de Toledo, Av. Castilla- La Mancha, 5, 45003 Toledo, Spain
+      label: Estación de Autobuses de Toledo
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Madrid, Estación de Plaza Elíptica, 28045 Madrid, Spain
+      label: Estación de Plaza Elíptica
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Museo Nacional del Prado
+      label: Museo Nacional del Prado
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Museo Nacional Centro de Arte Reina Sofía
+      label: Museo Nacional Centro de Arte Reina Sofía
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.415211, -3.699663
+      label: Calle 365 Discoteca y cócteles Madrid
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 40.415195, -3.700367
+      label: Planet Club
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lavapiés, Madrid, Spain
+      label: Lavapiés Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Moncloa, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Madrid, Estación de Moncloa
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 40.945030, -4.121999
+      label: Segovia, Estación de Autobuses
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Segovia Aqueduct, Pl. Azoguejo, 1, 40001 Segovia, Spain
+      label: Acueducto de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.948897, -4.121913
+      label: Iglesia de San Martín
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Segovia, C. Marqués del Arco, 1, 40001 Segovia, Spain
+      label: Catedral de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alcázar de Segovia, Pl. Reina Victoria Eugenia, s/n, 40003 Segovia, Spain
+      label: Alcázar de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.945030, -4.121999
+      label: Segovia, Estación de Autobuses
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Moncloa, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Madrid, Estación de Moncloa
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Santa María la Real de la Almudena, C. de Bailén, 10, Centro, 28013 Madrid, Spain
+      label: Catedral de Santa María la Real de la Almudena
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Royal Palace of Madrid, Centro, 28071 Madrid, Spain
+      label: Palacio Real de Madrid
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Temple of Debod, C. de Ferraz, 1, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Temple of Debod
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza Mayor, Pl. Mayor, Centro, 28012 Madrid, Spain
+      label: Plaza Mayor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.420303, -3.697859
+      label: El tigre Sidra Bar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Espit Chupitos, C. de Manuela Malasaña, 31, Centro, 28004 Madrid, Spain
+      label: Espit Chupitos
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: El Oso y el Madroño, Prta del Sol, 1, Centro, 28013 Madrid, Spain
+      label: El Oso y el Madroño
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Saint Louis University-Madrid (Padre Arrupe Hall), Av. del Valle, 34, Chamberí, 28003 Madrid, Spain
+      label: Saint Louis University-Madrid
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Parque del Oeste, P.º de Moret, 2, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Parque del Oeste
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.430329, -3.715444
+      label: El Corte Inglés Princesa Edificio Moda
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza de España, 2, Centro, 28008 Madrid, Spain
+      label: Faborit Shibuya
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.418332, -3.712128
+      label: Monumento ecuestre a Felipe IV
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: C. del Arenal, 8, primera planta, Centro, 28013 Madrid, Spain
+      label: Casita-Museo de Ratón Pérez
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.412590, -3.691967
+      label: Real Jardín Botánico
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mesón del Champiñón, Cava de San Miguel, 17, Centro, 28005 Madrid, Spain
+      label: Mesón del Champiñón
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Tirso de Molina, Madrid, Spain
+      label: Tirso de Molina
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: MAD Airport
+      label: Madrid Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: LIS Airport
+      label: Lisbon Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Lisbon Oriente Station, Av. Dom João II, 1990-233 Lisboa, Portugal
+      label: Lisbon Oriente Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 38.768108, -9.097126
+      label: Centro Vasco da Gama
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Parque das Nações, 1990-231 Lisboa, Portugal
+      label: Parque das Nações
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lisbon Oriente Station, Av. Dom João II, 1990-233 Lisboa, Portugal
+      label: Lisbon Oriente Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: LIS Airport
+      label: Lisbon Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: OPO Airport
+      label: Porto Airport
+
+  - mode: plane
+    duration: 7
+
+    to:
+      name: EWR Airport
+      label: Newark Aiport

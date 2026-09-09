@@ -1,0 +1,302 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#86A244"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: EDI airport
+      label: Edinburgh Airport
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Scott Monument, E. Princes St Gardens, Edinburgh EH2 2EJ, United Kingdom
+      label: Scott Monument
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.950462, -3.201871
+      label: Prince's Street Gardens
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.951817, -3.218064
+      label: Water of Leith Walkway
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 55.948767, -3.196880
+      label: Edinburgh Castle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St Giles' Cathedral, High St, Edinburgh EH1 1RE, United Kingdom
+      label: St Giles' Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.950098, -3.187885
+      label: Royal Mile
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.952433, -3.173936
+      label: Palace of Holyroodhouse
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.954989, -3.182680
+      label: Calton Hill
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.946773, -3.163214
+      label: Salisbury Crags
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Arthur's Seat, Edinburgh EH15 3PY, UK
+      label: Arthur's Seat
+  
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Castle Rock Hostel, 15 Johnston Terrace, Edinburgh EH1 2PW, United Kingdom
+      label: Edinburgh Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.953957, -3.195273
+      label: George Street Bus Stop
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Roy Bridge
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highland Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.884493, -4.795670
+      label: Sheep Farm
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Cille Choirill, Roy Bridge PH31 4AP, United Kingdom
+      label: Cille Choirill
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highlands
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 57.324446, -4.444921
+      label: Urquhart Castle
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Black Isle Bar Fort William, Gordon Square, Fort William PH33 6DY, United Kingdom
+      label: Black Isle Bar
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Roy Bridge
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highland Hostel
+
+  - mode: car
+    duration: 3
+
+    to:
+      name: 56.891185, -4.922938
+      label: Spean Bridge
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Fort William
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 56.870477, -5.435705
+      label: Glenfinnan
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 56.868891, -5.437550
+      label: Loch Shiel Viewpoint
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 56.876132, -5.433785
+      label: Glenfinnan Viaduct
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.874430, -5.438723
+      label: Loch Shiel Mountaintop Viewpoint
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.872461, -5.449779
+      label: Glenfinnan Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Queen Street Sta, Dundas St, Glasgow G1 2AF, UK
+      label: Glasgow Queen Street Station
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Glasgow Cathedral, Castle St, Glasgow G4 0QZ, United Kingdom
+      label: Glasgow Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: The Glasgow Necropolis, Castle St, Glasgow G4 0UZ, United Kingdom
+      label: Glasgow Necropolis
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: McLennan Arch, Glasgow Green, Saltmarket, Glasgow G1 5JZ, United Kingdom
+      label: McLennan Arch
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: The Ark Glasgow, 42-46 North Frederick Street, Glasgow G1 2BS, United Kingdom
+      label: The Ark Glasgow
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: GLA airport
+      label: Glasgow Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

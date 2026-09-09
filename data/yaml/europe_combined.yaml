@@ -1,0 +1,3725 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: plane
+    duration: 7
+
+    from:
+      name: EWR airport
+      label: Newark Airport
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+    color: "#DB8500"
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Samuel Beckett Bridge
+      label: Samuel Beckett Bridge
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Trinity College Dublin
+      label: Trinity College Dublin
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: GVA airport
+      label: Geneva Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Chamonix Sud
+      label: Chamonix Sud
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Via Ferrata des Evettes - La Flégère Chamonix-Mont-Blanc
+      label: Via Ferrata des Evettes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Crémerie Du Moulin
+      label: La Crémerie Du Moulin
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Le Buet
+      label: Le Buet
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Via Ferrata de la Cascade de Bérard
+      label: Via Ferrata de la Cascade de Bérard
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: Le Buet
+      label: Le Buet
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Rue des Allobroges, 74400 Chamonix-Mont-Blanc, France
+      label: Chamonix-Mont-Blanc
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Mer de Glace
+      label: Mer de Glace
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Chamonix Sud
+      label: Chamonix Sud
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Geneva Bus Station
+      label: Geneva Bus Station
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: Brunswick Monument Geneva
+      label: Brunswick Monument
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Bains des Pâquis Geneva
+      label: Bains des Pâquis
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Cathédrale Saint-Pierre Genève
+      label: Cathédrale Saint-Pierre Genève
+  
+  - mode: bus
+    duration: 2
+
+    to:
+      name: GVA airport
+      label: Geneva airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#E53935"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 2
+    to:
+      name: STN airport
+      label: London Stansted Airport
+
+  - mode: plane
+    duration: 3
+    to:
+      name: BGY airport
+      label: Milan Bergamo Airport
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Milano Centrale
+      label: Milano Centrale Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Varenna Esino, 23828 Perledo LC, Italy
+      label: Varenna Train Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.011518, 9.282984
+      label: Passerella Innamorati Sul Lago
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.006278, 9.290572
+      label: Chiesetta del Cimitero
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.010749, 9.286096
+      label: Castello di Vezio
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 45.985559, 9.259893
+      label: Bellagio Ferry Terminal
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Punta Spartivento, Bellagio, Italy
+      label: Punta Spartivento
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.988047, 9.261769
+      label: Basilica of St. Giacomo
+
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 45.985559, 9.259893
+      label: Bellagio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Villa del Balbianello, Lenno, Italy
+      label: Villa del Balbianello
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.011518, 9.282984
+      label: Passerella Innamorati Sul Lago
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lake Como Peace Lodge, Via Monsignor E. Poletti, 71, 22017 Menaggio CO, Italy
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Varenna Esino, 23828 Perledo LC, Italy
+      label: Varenna Train Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Milano Centrale
+      label: Milano Centrale Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Verona Porta Nuova
+      label: Verona Porta Nuova Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Corso Porta Nuova, Verona, Italy
+      label: Corso Porta Nuova
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Piazza Bra, Verona, Italy
+      label: Piazza Bra
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Arena di Verona, Verona, Italy
+      label: Arena di Verona
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa di Giulietta, Ingresso dal Teatro Nuovo in Piazzetta Navona, Via Cappello, 23, 37121 Verona VR, Italy
+      label: Casa di Giulietta
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Torre dei Lamberti, Via della Costa, 1, 37121 Verona VR, Italy
+      label: Torre dei Lamberti
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Piazza delle Erbe, Piazza Erbe, 37121 Verona VR, Italy
+      label: Piazza delle Erbe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica of Santa Anastasia, Piazza S.Anastasia, 37121 Verona VR, Italy
+      label: Basilica of Santa Anastasia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte Pietra, Verona, Italy
+      label: Ponte Pietra
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Castel San Pietro, Verona, Italy
+      label: Castel San Pietro
+
+  - mode: walk
+    duration: 6
+
+    to:
+      name: Verona Porta Nuova, Verona, Italy
+      label: Verona Porta Nuova Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Ponte della Costituzione, Venice, Italy
+      label: Ponte della Costituzione
+      
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte degli Scalzi, Venice, Italy
+      label: Ponte degli Scalzi
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte delle Tette, Venice, Italy
+      label: Ponte delle Tette
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Ponte di Rialto, Venice, Italy
+      label: Ponte di Rialto
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica di San Marco, Venice, Italy
+      label: Basilica di San Marco
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Doge's Palace, P.za San Marco, 1, 30124 Venezia VE, Italy
+      label: Palazzo Ducale
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica S.Maria Gloriosa dei Frari, Venice, Italy
+      label: Basilica S.Maria Gloriosa dei Frari
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Venezia Mestre, Venice, Italy
+      label: Venezia Mestre Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Anda Venice Hostel, Venice, Italy
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Venezia Mestre, Venice, Italy
+      label: Venezia Mestre Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Piazza San Marco, Venice, Italy
+      label: Piazza San Marco
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.442792, 12.341027
+      label: F.te Nove "d" Station
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Burano "C", Burano, Italy
+      label: Burano "C" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Tre Ponti, Burano, Italy
+      label: Tre Ponti
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte degli Assassini, Burano, Italy
+      label: Ponte degli Assassini
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.484480, 12.418681
+      label: Chiesa Parrocchiale di San Martino Vescovo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Burano "C", Burano, Italy
+      label: Burano "C" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Murano Faro "A", Murano, Italy
+      label: Murano Faro "A" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Perla Ai Bisatei, Campo S. Bernardo, 5/6, 30141 Venezia VE, Italy
+      label: La Perla Ai Bisatei
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Duomo Basilica dei Santi Maria e Donato, Murano, Italy
+      label: Duomo Basilica dei Santi Maria e Donato
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vetreria Artistica Colleoni, Murano, Italy
+      label: Vetreria Artistica Colleoni Glass Factory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Murano Colonna "B", Murano, Italy
+      label: Murano Colonna "B" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: VCE Airport, Venice, Italy
+      label: Venice Marco Polo Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#A8246D"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: OSL airport
+      label: Oslo Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Oslo Central Station, Norway
+      label: Oslo Central Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Sofienberg Kirke, Oslo, Norway
+      label: Sofienberg Kirke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Oslo Opera House, Kirsten Flagstads plass 1, 0150 Oslo, Norway
+      label: Oslo Opera House
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Deichman Bjørvika, Oslo, Norway
+      label: Deichman Bjørvika
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Stortinget, Oslo, Norway
+      label: Stortinget
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nationaltheatret, Oslo, Norway
+      label: Nationaltheatret
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nobels Fredssenter, Oslo, Norway
+      label: Nobels Fredssenter
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.898747, 10.730895
+      label: Hovedøya Port
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hovedøya kloster, Oslo, Norway
+      label: Hovedøya kloster
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.893840, 10.726664
+      label: Hovedøya badeplass
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.892339, 10.727634
+      label: Østre kanonbatteri
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lavetthuset, Hovedøya, Oslo, Norway
+      label: Lavetthuset
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.898747, 10.730895
+      label: Hovedøya Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.890533, 10.719178
+      label: Lindøya øst Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.887769, 10.702180
+      label: Lindøya stupebrett
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lindøya vest, Oslo, Norway
+      label: Lindøya vest Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.902474, 10.741604
+      label: Vippa
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Akershus Fortress, Oslo, Norway
+      label: Akershus Fortress
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Vettakollen, 0781 Oslo, Norway
+      label: Vettakollen Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.968027, 10.699384
+      label: Vettakollen Viewpoint
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vettakollen, 0781 Oslo, Norway
+      label: Vettakollen Station
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.913064, 10.761688
+      label: Grønland Neighbourhood
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Backstube Kvadraturen, Prinsens gate 12, 0152 Oslo, Norway
+      label: Backstube Kvadraturen
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Nasjonalmuseet, Oslo, Norway
+      label: Nasjonalmuseet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Det kongelige slott, Oslo, Norway
+      label: Det kongelige slott
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Uranienborg Church, Oslo, Norway
+      label: Uranienborg Church
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vigelandsparken, Oslo, Norway
+      label: Vigelandsparken
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Oslo Domkirke, Oslo, Norway
+      label: Oslo Domkirke
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.911249, 10.749275
+      label: Karl Johans gate
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Waldemar Thranes gate 8, 0171 Oslo, Norway
+      label: Restaurant Schrøder
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Langkaia 1, 0150 Oslo, Norway
+      label: SALT Sauna
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.884416, 10.724311
+      label: Gressholmen Port
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: 59.979116, 10.676130
+      label: Frognerseteren Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frognerseteren Café & Restaurant, Holmenkollveien 200, 0791 Oslo, Norway
+      label: Frognerseteren Café
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.979116, 10.676130
+      label: Frognerseteren Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 59.929965, 10.714851
+      label: Majorstuen Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Sognsvann lake, 0890 Oslo, Norway
+      label: Sognsvann lake
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Oslo Central Station, Norway
+      label: Oslo Central Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: OSL airport
+      label: Oslo Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#6F39AC"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: AMS airport
+      label: Amsterdam Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands
+      label: Rijksmuseum
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hans Brinker Budget Hostel, Kerkstraat 136-138, 1017 GR Amsterdam, Netherlands
+      label: Amsterdam Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Negen Straatjes, Amsterdam, Netherlands
+      label: Negen Straatjes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Royal Palace Amsterdam, Nieuwezijds Voorburgwal 147, 1012 RJ Amsterdam, Netherlands
+      label: Koninklijk Paleis Amsterdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Anne Frank House, Westermarkt 20, 1016 GV Amsterdam, Netherlands
+      label: Anne Frank Huis
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Van Gogh Museum, Museumplein 6, 1071 DJ Amsterdam, Netherlands
+      label: Van Gogh Museum
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.356469, 4.879625
+      label: The Concertgebouw
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.361013, 4.879106
+      label: Vondelpark
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hans Brinker Budget Hostel, Kerkstraat 136-138, 1017 GR Amsterdam, Netherlands
+      label: Amsterdam Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Rijksmuseum, Museumstraat 1, 1071 XX Amsterdam, Netherlands
+      label: Rijksmuseum
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albert Cuyp Markt, Albert Cuypstraat 101, 1072 VV Amsterdam, Netherlands
+      label: Albert Cuyp Markt
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Sloterdijk, Amsterdam, Netherlands
+      label: Amsterdam Sloterdijk Station
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Gand-Dampoort / Gent-Dampoort, 9000 Gent, Belgium
+      label: Gent-Dampoort Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: St Bavo's Cathedral, Sint-Baafsplein 1, 9000 Gent, Belgium
+      label: St Bavo's Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Korenmarkt, 9000 Gent, Belgium
+      label: Korenmarkt
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hostel Uppelink, Sint-Michielsplein 21, 9000 Gent, Belgium
+      label: Ghent Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.054825, 3.720081
+      label: Korenlei
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Castle of the Counts, Sint-Veerleplein 11, 9000 Gent, Belgium
+      label: Gravensteen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.053769, 3.719473
+      label: Sint-Michielskerk
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.050564, 3.710529
+      label: Marengo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ghent University - Campus Aula, Universiteitstraat 4, 9000 Gent, Belgium
+      label: Universiteit Gent
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hostel Uppelink, Sint-Michielsplein 21, 9000 Gent, Belgium
+      label: Ghent Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Gent-Sint-Pieters, 9000 Gent, Belgium
+      label: Gent-Sint-Pieters Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Aachen Hauptbahnhof, Bahnhofpl. 1A, 52064 Aachen, Germany
+      label: Aachen Hauptbahnhof
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: University Library RWTH, Templergraben 61, 52062 Aachen, Germany
+      label: RWTH Aachen University
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Aachen Cathedral, Domhof 1, 52062 Aachen, Germany
+      label: Aachener Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Elisenbrunnen, Friedrich-Wilhelm-Platz, 52062 Aachen, Germany
+      label: Elisenbrunnen
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Aachen Hauptbahnhof, Bahnhofpl. 1A, 52064 Aachen, Germany
+      label: Aachen Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Cologne Cathedral, Domkloster 4, 50667 Köln, Germany
+      label: Kölner Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hohenzollern Bridge, Hohenzollernbrücke, 50679 Köln, Germany
+      label: Hohenzollernbrücke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.938291, 6.968222
+      label: Rheinboulevard
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.938585, 6.962189
+      label: Groß St. Martin
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Brauhaus FRÜH am Dom, Am Hof 12-18, 50667 Köln, Germany
+      label: Brauhaus Früh
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 50.948298, 6.887967
+      label: Müngersdorf S-Bahn Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: MEININGER Hotel Köln West, Stolberger Str. 347, 50933 Lindenthal, Germany
+      label: Köln Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 50.948298, 6.887967
+      label: Müngersdorf S-Bahn Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name:  Cologne Cathedral, Domkloster 4, 50667 Köln, Germany
+      label: Kölner Dom
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Köln Hauptbahnhof, Trankgasse 11, 50667 Köln, Germany
+      label: Köln Hauptbahnhof
+  
+  - mode: train
+    duration: 4
+
+    to:
+      name: Frankfurt (Main) Hauptbahnhof, Am Hauptbahnhof 1, 60329 Frankfurt am Main, Germany
+      label: Frankfurt Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.110481, 8.682337
+      label: Römerberg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt Cathedral, Domplatz 1, 60311 Frankfurt am Main-Innenstadt I, Germany
+      label: Frankfurt Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alt-Sachsenhausen, Große Rittergasse 53, 60594 Frankfurt-Süd, Germany
+      label: Alt-Sachsenhausen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Dreikönigskirche, Sachsenhäuser Ufer, 60594 Frankfurt-Süd, Germany
+      label: Dreikönigskirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Eiserner Steg, 60594 Frankfurt-Süd, Germany
+      label: Eiserner Steg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.101553, 8.680967
+      label: Schweizer Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Südbahnhof, 60594 Frankfurt-Süd, Germany
+      label: Frankfurt Südbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Frankfurt Ostend, Hanauer Landstraße 207, 60314 Frankfurt am Main-Bornheim/Ostend, Germany
+      label: Frankfurt Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 50.108879, 8.673578
+      label: Frankfurt Willy-Brandt-Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Main Tower, Neue Mainzer Str. 52-58, 60311 Frankfurt am Main-Innenstadt I, Germany
+      label: Main Tower
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 50.101553, 8.680967
+      label: Schweizer Platz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Südbahnhof, 60594 Frankfurt-Süd, Germany
+      label: Frankfurt Südbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Frankfurt Ostend, Hanauer Landstraße 207, 60314 Frankfurt am Main-Bornheim/Ostend, Germany
+      label: Frankfurt Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Frankfurt (Main) Hauptbahnhof, Am Hauptbahnhof 1, 60329 Frankfurt am Main, Germany
+      label: Frankfurt Hauptbahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Aulagebäude der Universität Göttingen, Wilhelmsplatz 1, 37073 Göttingen, Germany
+      label: Aulagebäude der Universität Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Gänseliesel, Markt, 37073 Göttingen, Germany
+      label: Gänseliesel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.529752, 9.911934
+      label: Rondell der Nobelpreisträger
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 51.533634, 9.907369
+      label: Stadtfriedhof Göttingen
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Geismar Landstraße 11, 37083 Göttingen, Germany
+      label: Carl Friedrich Gauss Göttingen Observatory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Geismar Landstraße 11, 37083 Göttingen, Germany
+      label: Carl Friedrich Gauss Göttingen Observatory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Zum Szültenbürger / Göttingen, Prinzenstraße 7, 37073 Göttingen, Germany
+      label: Zum Szültenbürger
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Göttingen, Bahnhofspl. 1, 37073 Göttingen, Germany
+      label: Göttingen Bahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Heidelberg Hauptbahnhof, Berliner Str. 2, 69120 Heidelberg, Germany
+      label: Heidelberg Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.412198, 8.712720
+      label: Karlsplatz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.409396, 8.714178
+      label: Schloss Heidelberg
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Brückenaffe, Neckarstaden 66, 69117 Heidelberg-Altstadt, Germany
+      label: Brückenaffe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.414291, 8.709520
+      label: Alte Brücke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Heiliggeistkirche, Hauptstraße 189, 69117 Heidelberg, Germany
+      label: Heiliggeistkirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 49.410532, 8.698037
+      label: Heidelberg Hauptstraße
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Heidelberg Hauptbahnhof, Berliner Str. 2, 69120 Heidelberg, Germany
+      label: Heidelberg Hauptbahnhof
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Stuttgart Hauptbahnhof, Arnulf-Klett-Platz 2, 70173 Stuttgart, Germany
+      label: Stuttgart Hauptbahnhof
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.77853, 9.179886
+      label: Stuttgart Schlossplatz
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: a&o Hostel Stuttgart City, Rosensteinstraße 14/16, 70191 Nord, Germany
+      label: Stuttgart Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Porsche Museum, Porscheplatz 1, 70435 Stuttgart, Germany
+      label: Porsche Museum
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: STR Airport, Flughafenstraße 32, 70629 Stuttgart, Germany
+      label: Stuttgart Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+    
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#0000C2"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: HAM airport
+      label: Hamburg Airport
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Lübeck Hauptbahnhof, Am Bahnhof 4, 23558 Lübeck, Germany
+      label: Lübeck Hauptbahnhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.866271, 10.679892
+      label: Museum Holstentor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Marienkirche, Marienkirchhof 1, 23552 Lübeck, Germany
+      label: Marienkirche
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Hansestadt Lübeck, Breite Str. 62, 23552 Lübeck-Lübecker Altstadt, Germany
+      label: Hansestadt Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 23552, Rehderbrücke, 23552 Lübeck, Germany
+      label: Jan Gubi Wiese
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lübeck Cathedral, Mühlendamm 2-6, 23552 Lübeck, Germany
+      label: Lübeck Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.865744, 10.679891
+      label: Salzspeicher Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.866558, 10.685692
+      label: Café Niederegger
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.870846, 10.688449
+      label: St.-Jakobi-Kirche Lübeck
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.874074, 10.691163
+      label: Burgtor in Lübeck
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Musik- und Kongresshalle Lübeck, Willy-Brandt-Allee 10, 23554 Lübeck, Germany
+      label: Musik- und Kongresshalle Lübeck
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St. Peter's Church, Königstraße 104, 23552 Lübeck, Germany
+      label: St. Peter's Church
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lübeck Hauptbahnhof, Am Bahnhof 4, 23558 Lübeck, Germany
+      label: Lübeck Hauptbahnhof
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Büchen, 21514 Büchen, Germany
+      label: Büchen Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 53.896566, 11.469071
+      label: Wismar Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schiffbauerdamm 3, 23966 Wismar, Germany
+      label: Fischfachgeschäft Seeperle Wismar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St.-Georgen-Kirchhof 1A, 23966 Wismar, Germany
+      label: St.-Georgen-Kirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St.-Marien-Kirchhof 1, 23966 Wismar, Germany
+      label: St.-Marien-Kirchturm
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.891406, 11.466305
+      label: Marktplatz Wismar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.896347, 11.461431
+      label: Wassertor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.899400, 11.457194
+      label: Alter Hafen
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.896566, 11.469071
+      label: Wismar Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Schwerin Mitte, 19053 Schwerin, Germany
+      label: Schwerin Mitte Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.625026, 11.417898
+      label: Schwerin Castle
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.626111, 11.419063
+      label: Bar Pier-7
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.637654, 11.410112
+      label: The Avalon Hotel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.625026, 11.417898
+      label: Schwerin Castle
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.623496, 11.417819
+      label: Lennéstraße Alte Brücke
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 53.624028, 11.420102
+      label: Orangerie Schwerin
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: 53.624409, 11.420203
+      label: Grotte im Schlossgarten
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.629359, 11.414713
+      label: St.-Marien-Dom zu Schwerin
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 53.630865, 11.412281
+      label: Südufer Pfaffenteich Treppe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schwerin Hauptbahnhof, 19053 Schwerin, Germany
+      label: Schwerin Hauptbahnhof
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Berlin Hauptbahnhof, Europaplatz 1, 10557 Berlin, Germany
+      label: Berlin Hauptbahnhof
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: Brandenburg Gate, Pariser Platz, 10117 Berlin, Germany
+      label: Brandenburger Tor
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Denkmal für die ermordeten Juden Europas, Cora-Berliner-Straße 1, 10117 Berlin, Germany
+      label: Denkmal für die ermordeten Juden Europas
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.519511, 13.372746
+      label: Bundestag U-Bahn Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Kochstraße U-Bahn Station, 10969 Berlin, Germany
+      label: Kochstraße U-Bahn Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Checkpoint Charlie, Friedrichstraße 43-45, 10117 Berlin, Germany
+      label: Checkpoint Charlie
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Kochstraße U-Bahn Station, 10969 Berlin, Germany
+      label: Kochstraße U-Bahn Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 52.519511, 13.372746
+      label: Bundestag U-Bahn Station
+  
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Reichstag Building, Platz der Republik 1, 11011 Berlin, Germany
+      label: Reichstag Building
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Belushi's Berlin (Mitte), Ziegelstraße 28, 10117 Berlin, Germany
+      label: Belushi's Berlin
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: a&o Hostel Berlin Friedrichshain, Boxhagener Str. 73, 10245 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Berlin Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Potsdam Hauptbahnhof, Breite Str. 1, 14467 Potsdam, Germany
+      label: Potsdam Hauptbahnhof
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Maulbeerallee 5A, 14469 Potsdam-Westliche Vorstadt, Germany
+      label: Historische Mühle von Sanssouci
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Schloss Sanssouci, Maulbeerallee 1, 14469 Potsdam, Germany
+      label: Schloss Sanssouci
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Im Park Sanssouci 4, 14469 Potsdam-Westliche Vorstadt, Germany
+      label: Bildergalerie von Sanssouci
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 52.401329, 13.016499
+      label: Neues Palais
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 52.400407, 13.031936
+      label: Chinesisches Haus im Park Sanssouci
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 52.401079, 13.043694
+      label: Friedenskirche
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.399503, 13.047937
+      label: Brandenburger Tor in Potsdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.398736, 13.058167
+      label: Platz der Einheit
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Meierei Potsdam, Im Neuen Garten 10, 14469 Potsdam-Nördliche Vorstadt, Germany
+      label: Meierei Potsdam
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Schloss Cecilienhof, Im Neuen Garten 11, 14469 Potsdam-Nördliche Vorstadt, Germany
+      label: Schloss Cecilienhof
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.420965, 13.077383
+      label: Eremitage
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 52.413533, 13.090572
+      label: Glienicker Brücke
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 52.398736, 13.058167
+      label: Platz der Einheit
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.403481, 13.057872
+      label: Nauen Gate
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Potsdamer Platz, 10785 Berlin, Germany
+      label: Potsdamer Platz
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Warshauer Straße U-Bahn Station, 10243 Berlin, Germany
+      label: Warshauer Straße U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.503710, 13.443569
+      label: East Side Gallery
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Holzmarktstraße 25, 10243 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Holzmarkt
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Schlesische Str. 5, 10997 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Maison Umami
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Warschauer Straße U-Bahn Station, 10243 Berlin, Germany
+      label: Warschauer Straße U-Bahn Station
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: a&o Hostel Berlin Friedrichshain, Boxhagener Str. 73, 10245 Berlin-Bezirk Friedrichshain-Kreuzberg, Germany
+      label: Berlin Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ostkreuz U-Bahn Station, 10243 Berlin, Germany
+      label: Ostkreuz U-Bahn Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Hackescher Markt U-Bahn Station, 10178 Berlin, Germany
+      label: Hackescher Markt U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.520291, 13.397995
+      label: Neues Museum
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 52.520660, 13.398707
+      label: Alte Nationalgalerie
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 52.518924, 13.399346
+      label: Lustgarten
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Berliner Dom, Am Lustgarten, 10178 Berlin, Germany
+      label: Berliner Dom
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Berliner Fernsehturm, Panoramastraße 1A, 10178 Berlin, Germany
+      label: Berliner Fernsehturm
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Alexanderplatz, Dircksenstraße 2, 10179 Berlin, Germany
+      label: Alexanderplatz U-Bahn Station
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Leinestraße U-Bahn Station, 10969 Berlin, Germany
+      label: Leinestraße U-Bahn Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 52.476445, 13.417568
+      label: Tempelhofer Feld
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Boddinstr., 12049 Berlin, Germany
+      label: Boddinstraße U-Bahn Station
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Berlin Hauptbahnhof, Europaplatz 1, 10557 Berlin, Germany
+      label: Berlin Hauptbahnhof
+    
+  - mode: train
+    duration: 3
+
+    to:
+      name: BER airport, 12529 Schönefeld, Germany
+      label: Berlin Brandenburg Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#00ACC1"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: BVA airport
+      label: Paris Beauvais Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 48.880186, 2.282359
+      label: Porte Maillot
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 48.853581, 2.345310
+      label: Saint-Michel Notre-Dame Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France
+      label: Cathédrale Notre-Dame de Paris
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Sainte-Chapelle, 8 Boulevard du Palais, 75001 Paris, France
+      label: Sainte-Chapelle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Maison d'Isabelle, 47ter Bd Saint-Germain, 75005 Paris, France
+      label: La Maison d'Isabelle
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris, France
+      label: Musée d'Orsay
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.863031, 2.313011
+      label: Pont Alexandre III Bridge
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+      label: Eiffel Tower
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.861868, 2.289225
+      label: Place du Trocadéro
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Arc de Triomphe, Place Charles de Gaulle, 75008 Paris, France
+      label: Arc de Triomphe
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.861868, 2.289225
+      label: Hovedøya badeplass
+
+  - mode: walk
+    duration: 7
+
+    to:
+      name: Jardin du Tuileries, 113 Rue de Rivoli, 75001 Paris, France
+      label: Jardin du Tuileries
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: 48.881332, 2.357464
+      label: Gare du Nord Station
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Basilique du Sacré-Cœur de Montmartre, 35 Rue du Chevalier de la Barre, 75018 Paris, France
+      label: Basilique du Sacré-Cœur de Montmartre
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.886405, 2.340834
+      label: Place du Tertre
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Musée du Louvre, Rue de Rivoli, 75001 Paris, France
+      label: Musée du Louvre
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Panthéon, Pl. du Panthéon, 75005 Paris, France
+      label: Panthéon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Shakespeare and Company, 37 Rue de la Bûcherie, 75005 Paris, France
+      label: Shakespeare and Company Bookstore
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Jardin du Luxembourg, 75006 Paris, France
+      label: Jardin du Luxembourg
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Versailles Chantiers Station, 78000 Versailles, France
+      label: Versailles Chantiers Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.804776, 2.120918
+      label: Château de Versailles
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.804936, 2.112835
+      label: Bassin de Saturne
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.807290, 2.111332
+      label: Le char d'Apollon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.808101, 2.112525
+      label: Bosquet de l'Encelade
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Le Grand Trianon, 78000 Versailles, France
+      label: Le Grand Trianon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Petit Trianon, 78000 Versailles, France
+      label: Petit Trianon
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Temple de l'Amour, 78000 Versailles, France
+      label: Temple de l'Amour
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Hameau de la Reine, 78000 Versailles, France
+      label: Hameau de la Reine
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.819331, 2.112082
+      label: Tour de Marlborough
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.816523, 2.108484
+      label: Le Rocher et le Belvédère
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.811171, 2.099034
+      label: Grand Canal of Versailles
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 48.814665, 2.078650
+      label: Allée Royale
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Saint-Germain-en-Laye Station, 78100 Saint-Germain-en-Laye, France
+      label: Saint-Germain-en-Laye Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.898467, 2.096038
+      label: Château de Saint-Germain-en-Laye
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 48.861765, 2.347092
+      label: Châtelet - Les Halles Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Pont des Arts, 75006 Paris, France
+      label: Pont des Arts
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Cathedrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France
+      label: Cathedrale Notre-Dame de Paris
+
+  - mode: walk
+    duration: 6
+
+    to:
+      name: Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+      label: Eiffel Tower
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Porte Maillot, 75017 Paris, France
+      label: Porte Maillot
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: BVA airport
+      label: Paris Beauvais Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+    color: "#259F59"
+
+  - mode: plane
+    duration: 7
+    to:
+      name: ORD airport
+      label: Chicago O'Hare Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: LAX airport
+      label: Los Angeles International Airport
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 5
+
+    to:
+      name: Friends of Amateur Rocketry, Randsburg, CA 93554
+      label: Friends of Amateur Rocketry
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 35.377091, -117.825056
+      label: Nosecone Post-launch Recovery
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Friends of Amateur Rocketry, Randsburg, CA 93554
+      label: Friends of Amateur Rocketry
+
+  - mode: car
+    duration: 5
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 35.361721, -117.976617
+      label: Scenic Red Rock Canyon
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Mojave Thai Cuisine, 16870 CA-14, Mojave, CA 93501
+      label: Mojave Thai Cuisine
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Manhattan Beach, California
+      label: Manhattan Beach
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Manhattan Beach Pier, Manhattan Beach, CA 90266
+      label: Roundhouse Aquarium
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Manhattan Beach, California
+      label: Manhattan Beach
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: LAX airport
+      label: Los Angeles International Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: EWR airport
+      label: Newark Airport
+
+  - mode: plane
+    duration: 7
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Ennis, Clonroad More, Inis, Co. Clare, Ireland
+      label: Ennis, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Cliffs of Moher Visitor Centre, Liscannor, Co. Clare, Ireland
+      label: Cliffs of Moher
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Lahinch, Co. Clare, Ireland
+      label: Lahinch, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Ennis, Clonroad More, Inis, Co. Clare, Ireland
+      label: Ennis, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Limerick Bus Station, Prior's-Land, Limerick, Ireland
+      label: Limerick, Ireland
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#86A244"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: EDI airport
+      label: Edinburgh Airport
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Scott Monument, E. Princes St Gardens, Edinburgh EH2 2EJ, United Kingdom
+      label: Scott Monument
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.950462, -3.201871
+      label: Prince's Street Gardens
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.951817, -3.218064
+      label: Water of Leith Walkway
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 55.948767, -3.196880
+      label: Edinburgh Castle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: St Giles' Cathedral, High St, Edinburgh EH1 1RE, United Kingdom
+      label: St Giles' Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.950098, -3.187885
+      label: Royal Mile
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.952433, -3.173936
+      label: Palace of Holyroodhouse
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.954989, -3.182680
+      label: Calton Hill
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.946773, -3.163214
+      label: Salisbury Crags
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Arthur's Seat, Edinburgh EH15 3PY, UK
+      label: Arthur's Seat
+  
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Castle Rock Hostel, 15 Johnston Terrace, Edinburgh EH1 2PW, United Kingdom
+      label: Edinburgh Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 55.953957, -3.195273
+      label: George Street Bus Stop
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Roy Bridge
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highland Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.884493, -4.795670
+      label: Sheep Farm
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Cille Choirill, Roy Bridge PH31 4AP, United Kingdom
+      label: Cille Choirill
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highlands
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 57.324446, -4.444921
+      label: Urquhart Castle
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: 56.821439, -5.103702
+      label: Fort William
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Black Isle Bar Fort William, Gordon Square, Fort William PH33 6DY, United Kingdom
+      label: Black Isle Bar
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Roy Bridge
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Àite Cruinnichidh, 1 Achluachrach, Roybridge, Roy Bridge PH31 4AW, United Kingdom
+      label: Scotland Highland Hostel
+
+  - mode: car
+    duration: 3
+
+    to:
+      name: 56.891185, -4.922938
+      label: Spean Bridge
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 56.888408, -4.836879
+      label: Fort William
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 56.870477, -5.435705
+      label: Glenfinnan
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 56.868891, -5.437550
+      label: Loch Shiel Viewpoint
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 56.876132, -5.433785
+      label: Glenfinnan Viaduct
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.874430, -5.438723
+      label: Loch Shiel Mountaintop Viewpoint
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 56.872461, -5.449779
+      label: Glenfinnan Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Queen Street Sta, Dundas St, Glasgow G1 2AF, UK
+      label: Glasgow Queen Street Station
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Glasgow Cathedral, Castle St, Glasgow G4 0QZ, United Kingdom
+      label: Glasgow Cathedral
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: The Glasgow Necropolis, Castle St, Glasgow G4 0UZ, United Kingdom
+      label: Glasgow Necropolis
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: McLennan Arch, Glasgow Green, Saltmarket, Glasgow G1 5JZ, United Kingdom
+      label: McLennan Arch
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: The Ark Glasgow, 42-46 North Frederick Street, Glasgow G1 2BS, United Kingdom
+      label: The Ark Glasgow
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: GLA airport
+      label: Glasgow Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick
+
+  - mode: bus
+    duration: 2.5
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#DBA800"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 6
+    to:
+      name: Stockholm ARN airport
+      label: Stockholm Arlanda Airport
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Gamla Stan, Stockholm, Sweden
+      label: Gamla Stan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Svartmangatan 16, 111 29 Stockholm, Sweden
+      label: Tyska kyrkan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nobelprismuseet, Stortorget 2, 111 29 Stockholm, Sweden
+      label: Nobelprismuseet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Kungliga slottet, 111 30 Stockholm, Sweden
+      label: Kungliga slottet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Kungliga Operan, Gustav Adolfs torg 2, 103 22 Stockholm, Sweden
+      label: Kungliga Operan
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Riksdagshuset, 111 30 Stockholm, Sweden
+      label: Riksdagshuset
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Evert Taubes Terrass, 111 28 Stockholm, Sweden
+      label: Evert Taubes Terrass
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Avicii Arena, 121 77 Stockholm, Sweden
+      label: Avicii Arena
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: ARN airport
+      label: Stockholm Arlanda Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: BCN airport
+      label: Barcelona El Prat Airport
+  
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica de la Sagrada Família, Carrer de Mallorca, 401, Eixample, 08013 Barcelona, Spain
+      label: Basilica de la Sagrada Família
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa de les Punxes, Carrer de Rosselló, 241, Eixample, 08036 Barcelona, Spain
+      label: Casa de les Punxes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa Milà, Carrer de Provença, 261-265, Eixample, 08008 Barcelona, Spain
+      label: Casa Milà
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa Batlló, Passeig de Gràcia, 43, Eixample, 08007 Barcelona, Spain
+      label: Casa Batlló
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaça de Catalunya, 08002 Barcelona, Spain
+      label: Plaça de Catalunya
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Barcelona, Pla de la Seu, s/n, 08002 Barcelona, Spain
+      label: Catedral de Barcelona
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Pl. del Rei, Ciutat Vella, 08002 Barcelona, Spain
+      label: Plaça del Rei
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Playa de la Barceloneta, Passeig Marítim de la Barceloneta, 08003 Barcelona, Spain
+      label: Playa de la Barceloneta
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Arc de Triomf, Passeig de Lluís Companys, 08003 Barcelona, Spain
+      label: Arc de Triomf
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Mercat de la Boqueria, La Rambla, 91, 08001 Barcelona, Spain
+      label: Mercat de la Boqueria
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Parc de la Ciutadella, Passeig de Picasso, 21, 08003 Barcelona, Spain
+      label: Parc de la Ciutadella
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Barcelona Bed and Bike Hostel, Carrer de la Diputació, 360, Eixample, 08013 Barcelona, Spain
+      label: Barcelona Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Barcelona Sants Station, Plaça dels Països Catalans, s/n, 08014 Barcelona, Spain
+      label: Barcelona Sants Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Zaragoza Delicias Station, Zaragoza, Spain
+      label: Zaragoza Delicias Station
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 41.656437, -0.878639
+      label: Catedral-Basílica de Nuestra Señora del Pilar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 41.654870, -0.876226
+      label: Catedral del Salvador-La Seo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Puente de Piedra, Zaragoza, Spain
+      label: Puente de Piedra
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: El tubo, C. de la Libertad, 12, Casco Antiguo, 50003 Zaragoza, Spain
+      label: El tubo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Palacio de la Aljafería, Calle de los Diputados, s/n, 50004 Zaragoza, Spain
+      label: Palacio de la Aljafería
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Albergue Zaragoza Hostel, C. de los Predicadores, 70, Casco Antiguo, 50003 Zaragoza, Spain
+      label: Zaragoza Hostel
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Zaragoza Delicias Station, Zaragoza, Spain
+      label: Zaragoza Delicias Station
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Estación de Avenida de América, Chamartín, 28002 Madrid, Spain
+      label: Estación de Avenida de América
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Tirso de Molina, Madrid, Spain
+      label: Tirso de Molina
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza Mayor, Pl. Mayor, Centro, 28012 Madrid, Spain
+      label: Plaza Mayor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.418835, -3.697003
+      label: Gran Vía
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 40.420303, -3.697859
+      label: El tigre Sidra Bar
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+  
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lavapiés, Madrid, Spain
+      label: Lavapiés Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Madrid, Estación de Plaza Elíptica, 28045 Madrid, Spain
+      label: Estación de Plaza Elíptica
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Estación de Autobuses de Toledo, Av. Castilla- La Mancha, 5, 45003 Toledo, Spain
+      label: Estación de Autobuses de Toledo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mezquita del Cristo de la Luz, C. Cristo de la Luz, 22, 45002 Toledo, Spain
+      label: Mezquita del Cristo de la Luz
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral Primada de Toledo, Calle Cardenal Cisneros, 1, 45002 Toledo, Spain
+      label: Santa Iglesia Catedral Primada de Santa María
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Iglesia de Santo Tomé, C. de Santo Tomé, 5, 45002 Toledo, Spain
+      label: Iglesia de Santo Tomé
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Sinagoga de Santa María La Blanca, C. de Samuel Leví, 2, 45002 Toledo, Spain
+      label: Sinagoga de Santa María La Blanca
+
+  - mode: walk
+    duration: 3
+    to:
+      name: Monasterio de San Juan de los Reyes, C. de los Reyes Católicos, 17, 45002 Toledo, Spain
+      label: Monasterio de San Juan de los Reyes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alcázar de Toledo, Plaza del Alcázar, s/n, 45001 Toledo, Spain
+      label: Alcázar de Toledo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Puente de Alcántara, Toledo, Spain
+      label: Puente de Alcántara
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mirador del Valle, Toledo, Spain
+      label: Mirador del Valle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Estación de Autobuses de Toledo, Av. Castilla- La Mancha, 5, 45003 Toledo, Spain
+      label: Estación de Autobuses de Toledo
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Madrid, Estación de Plaza Elíptica, 28045 Madrid, Spain
+      label: Estación de Plaza Elíptica
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Museo Nacional del Prado
+      label: Museo Nacional del Prado
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Museo Nacional Centro de Arte Reina Sofía
+      label: Museo Nacional Centro de Arte Reina Sofía
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.415211, -3.699663
+      label: Calle 365 Discoteca y cócteles Madrid
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 40.415195, -3.700367
+      label: Planet Club
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lavapiés, Madrid, Spain
+      label: Lavapiés Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Moncloa, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Madrid, Estación de Moncloa
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 40.945030, -4.121999
+      label: Segovia, Estación de Autobuses
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Segovia Aqueduct, Pl. Azoguejo, 1, 40001 Segovia, Spain
+      label: Acueducto de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.948897, -4.121913
+      label: Iglesia de San Martín
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Segovia, C. Marqués del Arco, 1, 40001 Segovia, Spain
+      label: Catedral de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Alcázar de Segovia, Pl. Reina Victoria Eugenia, s/n, 40003 Segovia, Spain
+      label: Alcázar de Segovia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.945030, -4.121999
+      label: Segovia, Estación de Autobuses
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Moncloa, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Madrid, Estación de Moncloa
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Catedral de Santa María la Real de la Almudena, C. de Bailén, 10, Centro, 28013 Madrid, Spain
+      label: Catedral de Santa María la Real de la Almudena
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Royal Palace of Madrid, Centro, 28071 Madrid, Spain
+      label: Palacio Real de Madrid
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Temple of Debod, C. de Ferraz, 1, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Temple of Debod
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza Mayor, Pl. Mayor, Centro, 28012 Madrid, Spain
+      label: Plaza Mayor
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.420303, -3.697859
+      label: El tigre Sidra Bar
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Espit Chupitos, C. de Manuela Malasaña, 31, Centro, 28004 Madrid, Spain
+      label: Espit Chupitos
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: El Oso y el Madroño, Prta del Sol, 1, Centro, 28013 Madrid, Spain
+      label: El Oso y el Madroño
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Saint Louis University-Madrid (Padre Arrupe Hall), Av. del Valle, 34, Chamberí, 28003 Madrid, Spain
+      label: Saint Louis University-Madrid
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Parque del Oeste, P.º de Moret, 2, Moncloa - Aravaca, 28008 Madrid, Spain
+      label: Parque del Oeste
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.430329, -3.715444
+      label: El Corte Inglés Princesa Edificio Moda
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Plaza de España, 2, Centro, 28008 Madrid, Spain
+      label: Faborit Shibuya
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.418332, -3.712128
+      label: Monumento ecuestre a Felipe IV
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: C. del Arenal, 8, primera planta, Centro, 28013 Madrid, Spain
+      label: Casita-Museo de Ratón Pérez
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 40.412590, -3.691967
+      label: Real Jardín Botánico
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Mesón del Champiñón, Cava de San Miguel, 17, Centro, 28005 Madrid, Spain
+      label: Mesón del Champiñón
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 2060 The Newton Hostel, C. de la Cabeza, 11, Centro, 28012 Madrid, Spain
+      label: Madrid Hostel
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Tirso de Molina, Madrid, Spain
+      label: Tirso de Molina
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: MAD Airport
+      label: Madrid Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: LIS Airport
+      label: Lisbon Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Lisbon Oriente Station, Av. Dom João II, 1990-233 Lisboa, Portugal
+      label: Lisbon Oriente Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 38.768108, -9.097126
+      label: Centro Vasco da Gama
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Parque das Nações, 1990-231 Lisboa, Portugal
+      label: Parque das Nações
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lisbon Oriente Station, Av. Dom João II, 1990-233 Lisboa, Portugal
+      label: Lisbon Oriente Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: LIS Airport
+      label: Lisbon Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: OPO Airport
+      label: Porto Airport
+
+  - mode: plane
+    duration: 7
+
+    to:
+      name: EWR Airport
+      label: Newark Aiport

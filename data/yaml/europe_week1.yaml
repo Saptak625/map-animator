@@ -1,9 +1,9 @@
-fps: 15
+fps: 30
+dpi: 300
 
 segments:
-
   - mode: plane
-    duration: 15
+    duration: 7
 
     from:
       name: EWR airport
@@ -13,44 +13,171 @@ segments:
       name: SNN airport
       label: Shannon Airport
 
+    color: "#DB8500"
+
   - mode: bus
-    duration: 4
+    duration: 2
 
     to:
       name: University of Limerick
       label: University of Limerick
 
   - mode: bus
-    duration: 8
+    duration: 4
 
     to:
       name: Samuel Beckett Bridge
       label: Samuel Beckett Bridge
 
   - mode: walk
-    duration: 3
+    duration: 2
 
     to:
       name: Trinity College Dublin
       label: Trinity College Dublin
 
   - mode: bus
-    duration: 4
+    duration: 3
 
     to:
       name: DUB Airport
       label: Dublin Airport
 
   - mode: plane
-    duration: 6
-
+    duration: 5
     to:
       name: GVA airport
-      label: Newark Airport
+      label: Geneva Airport
 
   - mode: bus
     duration: 4
 
     to:
       name: Chamonix Sud
-      label: Chamonix
+      label: Chamonix Sud
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Via Ferrata des Evettes - La Flégère Chamonix-Mont-Blanc
+      label: Via Ferrata des Evettes
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Crémerie Du Moulin
+      label: La Crémerie Du Moulin
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Le Buet
+      label: Le Buet
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Via Ferrata de la Cascade de Bérard
+      label: Via Ferrata de la Cascade de Bérard
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: Le Buet
+      label: Le Buet
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Rue des Allobroges, 74400 Chamonix-Mont-Blanc, France
+      label: Chamonix-Mont-Blanc
+  
+  - mode: train
+    duration: 3
+
+    to:
+      name: Mer de Glace
+      label: Mer de Glace
+
+  - mode: train
+    duration: 2
+
+    to:
+      name: 45 Rte de la Frasse, 74400 Chamonix-Mont-Blanc, France
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Chamonix Sud
+      label: Chamonix Sud
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Geneva Bus Station
+      label: Geneva Bus Station
+
+  - mode: walk
+    duration: 1
+
+    to:
+      name: Brunswick Monument Geneva
+      label: Brunswick Monument
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Bains des Pâquis Geneva
+      label: Bains des Pâquis
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Cathédrale Saint-Pierre Genève
+      label: Cathédrale Saint-Pierre Genève
+  
+  - mode: bus
+    duration: 2
+
+    to:
+      name: GVA airport
+      label: Geneva airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

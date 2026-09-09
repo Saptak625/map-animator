@@ -1,0 +1,344 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#00ACC1"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: BVA airport
+      label: Paris Beauvais Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: 48.880186, 2.282359
+      label: Porte Maillot
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 48.853581, 2.345310
+      label: Saint-Michel Notre-Dame Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Cathédrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France
+      label: Cathédrale Notre-Dame de Paris
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Sainte-Chapelle, 8 Boulevard du Palais, 75001 Paris, France
+      label: Sainte-Chapelle
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Maison d'Isabelle, 47ter Bd Saint-Germain, 75005 Paris, France
+      label: La Maison d'Isabelle
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Musée d'Orsay, 1 Rue de la Légion d'Honneur, 75007 Paris, France
+      label: Musée d'Orsay
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.863031, 2.313011
+      label: Pont Alexandre III Bridge
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+      label: Eiffel Tower
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.861868, 2.289225
+      label: Place du Trocadéro
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Arc de Triomphe, Place Charles de Gaulle, 75008 Paris, France
+      label: Arc de Triomphe
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.861868, 2.289225
+      label: Hovedøya badeplass
+
+  - mode: walk
+    duration: 7
+
+    to:
+      name: Jardin du Tuileries, 113 Rue de Rivoli, 75001 Paris, France
+      label: Jardin du Tuileries
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: 48.881332, 2.357464
+      label: Gare du Nord Station
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Basilique du Sacré-Cœur de Montmartre, 35 Rue du Chevalier de la Barre, 75018 Paris, France
+      label: Basilique du Sacré-Cœur de Montmartre
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.886405, 2.340834
+      label: Place du Tertre
+
+  - mode: bus
+    duration: 5
+
+    to:
+      name: Musée du Louvre, Rue de Rivoli, 75001 Paris, France
+      label: Musée du Louvre
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Panthéon, Pl. du Panthéon, 75005 Paris, France
+      label: Panthéon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Shakespeare and Company, 37 Rue de la Bûcherie, 75005 Paris, France
+      label: Shakespeare and Company Bookstore
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Jardin du Luxembourg, 75006 Paris, France
+      label: Jardin du Luxembourg
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: JO&JOE Paris Gentilly, 89-93 Av. Paul Vaillant Couturier, 94250 Gentilly, France
+      label: Paris Hostel
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Versailles Chantiers Station, 78000 Versailles, France
+      label: Versailles Chantiers Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.804776, 2.120918
+      label: Château de Versailles
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.804936, 2.112835
+      label: Bassin de Saturne
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.807290, 2.111332
+      label: Le char d'Apollon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 48.808101, 2.112525
+      label: Bosquet de l'Encelade
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Le Grand Trianon, 78000 Versailles, France
+      label: Le Grand Trianon
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Petit Trianon, 78000 Versailles, France
+      label: Petit Trianon
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Temple de l'Amour, 78000 Versailles, France
+      label: Temple de l'Amour
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Hameau de la Reine, 78000 Versailles, France
+      label: Hameau de la Reine
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.819331, 2.112082
+      label: Tour de Marlborough
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.816523, 2.108484
+      label: Le Rocher et le Belvédère
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 48.811171, 2.099034
+      label: Grand Canal of Versailles
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: 48.814665, 2.078650
+      label: Allée Royale
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Saint-Germain-en-Laye Station, 78100 Saint-Germain-en-Laye, France
+      label: Saint-Germain-en-Laye Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 48.898467, 2.096038
+      label: Château de Saint-Germain-en-Laye
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 48.861765, 2.347092
+      label: Châtelet - Les Halles Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Pont des Arts, 75006 Paris, France
+      label: Pont des Arts
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Cathedrale Notre-Dame de Paris, 6 Parvis Notre-Dame - Pl. Jean-Paul II, 75004 Paris, France
+      label: Cathedrale Notre-Dame de Paris
+
+  - mode: walk
+    duration: 6
+
+    to:
+      name: Eiffel Tower, Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France
+      label: Eiffel Tower
+  
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Porte Maillot, 75017 Paris, France
+      label: Porte Maillot
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: BVA airport
+      label: Paris Beauvais Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

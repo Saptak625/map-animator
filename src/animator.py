@@ -6,7 +6,7 @@ from util import root_dir, output_dir
 ffmpeg_path = os.path.join(root_dir, "ffmpeg-master-latest-win64-gpl-shared", "bin", "ffmpeg.exe")
 
 # Use ffmpeg to create a video from a sequence of images.
-def animate_frames(fps: int):
+def animate_frames(filepath: str, fps: int):
     subprocess.run([
         ffmpeg_path,
         "-framerate",
@@ -17,5 +17,9 @@ def animate_frames(fps: int):
         "libx264",
         "-pix_fmt",
         "yuv420p",
-        os.path.join(output_dir, "travel.mp4")
+        filepath
     ])
+
+if __name__ == "__main__":
+    # Example usage
+    animate_frames(os.path.join(output_dir, "output.mp4"), fps=45)

@@ -1,0 +1,169 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 3
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+    color: "#259F59"
+
+  - mode: plane
+    duration: 7
+    to:
+      name: ORD airport
+      label: Chicago O'Hare Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: LAX airport
+      label: Los Angeles International Airport
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 5
+
+    to:
+      name: Friends of Amateur Rocketry, Randsburg, CA 93554
+      label: Friends of Amateur Rocketry
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 35.377091, -117.825056
+      label: Nosecone Post-launch Recovery
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Friends of Amateur Rocketry, Randsburg, CA 93554
+      label: Friends of Amateur Rocketry
+
+  - mode: car
+    duration: 5
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: 35.361721, -117.976617
+      label: Scenic Red Rock Canyon
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Mojave Thai Cuisine, 16870 CA-14, Mojave, CA 93501
+      label: Mojave Thai Cuisine
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Motel 6 Mojave, CA, 16958 CA-58, Mojave, CA 93501
+      label: Motel 6 Mojave
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: Manhattan Beach, California
+      label: Manhattan Beach
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Manhattan Beach Pier, Manhattan Beach, CA 90266
+      label: Roundhouse Aquarium
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Manhattan Beach, California
+      label: Manhattan Beach
+
+  - mode: car
+    duration: 4
+
+    to:
+      name: LAX airport
+      label: Los Angeles International Airport
+
+  - mode: plane
+    duration: 6
+
+    to:
+      name: EWR airport
+      label: Newark Airport
+
+  - mode: plane
+    duration: 7
+
+    to:
+      name: SNN airport
+      label: Shannon Airport
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Ennis, Clonroad More, Inis, Co. Clare, Ireland
+      label: Ennis, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Cliffs of Moher Visitor Centre, Liscannor, Co. Clare, Ireland
+      label: Cliffs of Moher
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Lahinch, Co. Clare, Ireland
+      label: Lahinch, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Ennis, Clonroad More, Inis, Co. Clare, Ireland
+      label: Ennis, Ireland
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Limerick Bus Station, Prior's-Land, Limerick, Ireland
+      label: Limerick, Ireland
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

@@ -37,6 +37,33 @@ class CameraController:
                 "zoom_smoothing": 0.4
             },
 
+            "bike": {
+
+                "base_zoom": 20.0,
+                "reference_length": 5_000.0,
+
+                "min_zoom": 15.0,
+
+                "max_zoom": 200.0,
+
+                "look_ahead": 0.08,
+                "position_smoothing": 0.6,
+                "zoom_smoothing": 0.4
+            },
+
+            "car": {
+                "base_zoom": 20.0,
+                "reference_length": 5_000.0,
+
+                "min_zoom": 15.0,
+
+                "max_zoom": 200.0,
+
+                "look_ahead": 0.08,
+                "position_smoothing": 0.6,
+                "zoom_smoothing": 0.4
+            },
+
             "bus": {
 
                 "base_zoom": 20.0,
@@ -248,15 +275,13 @@ class CameraController:
         #
         # --------------------------------------------------
 
+        # Show less of the total route at once = closer camera
         visible_multiplier = {
-
-            # Show less of the total route at once = closer camera
             "walk": 0.75,
-
+            "bike": 1.0,
+            "car": 1.0,
             "bus": 1.0,
-
             "train": 1.0
-
         }[mode]
 
 
@@ -546,65 +571,6 @@ class CameraController:
             position_smoothing=config["position_smoothing"],
             zoom_smoothing=config["zoom_smoothing"]
         )
-
-    # ======================================================
-    # FULL TRIP EXTENT
-    # ======================================================
-
-    def full_trip_view(
-        self,
-        cities,
-        padding=1.35,
-    ):
-        """
-        Calculate a camera center + zoom that fits every city
-        in the trip inside the portrait frame.
-
-        `padding` gives the city markers/labels some breathing room.
-        """
-
-        if not cities:
-            return 0.0, 0.0, 1.0
-
-        xs = [city[1] for city in cities]
-        ys = [city[2] for city in cities]
-
-        min_x = min(xs)
-        max_x = max(xs)
-        min_y = min(ys)
-        max_y = max(ys)
-
-        center_x = (min_x + max_x) / 2.0
-        center_y = (min_y + max_y) / 2.0
-
-        width = max_x - min_x
-        height = max_y - min_y
-
-        # Portrait frame is 9:16.
-        aspect = 9 / 16
-
-        # The camera's vertical extent is determined by zoom.
-        # Make sure both the horizontal and vertical extents fit.
-        required_height = max(
-            height,
-            width / aspect,
-        )
-
-        # Account for marker pins and labels around the cities.
-        required_height *= padding
-
-        if required_height <= 0:
-            zoom = self.flight["end_zoom"]
-        else:
-            zoom = 1000000 / required_height
-
-        # Don't let the outro get absurdly close or absurdly far out.
-        zoom = max(
-            0.05,
-            min(20.0, zoom)
-        )
-
-        return center_x, center_y, zoom
 
 
     # ======================================================

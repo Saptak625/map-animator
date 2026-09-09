@@ -1,0 +1,477 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#E53935"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 2
+    to:
+      name: STN airport
+      label: London Stansted Airport
+
+  - mode: plane
+    duration: 3
+    to:
+      name: BGY airport
+      label: Milan Bergamo Airport
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Milano Centrale
+      label: Milano Centrale Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Varenna Esino, 23828 Perledo LC, Italy
+      label: Varenna Train Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.011518, 9.282984
+      label: Passerella Innamorati Sul Lago
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.006278, 9.290572
+      label: Chiesetta del Cimitero
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.010749, 9.286096
+      label: Castello di Vezio
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 45.985559, 9.259893
+      label: Bellagio Ferry Terminal
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Punta Spartivento, Bellagio, Italy
+      label: Punta Spartivento
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.988047, 9.261769
+      label: Basilica of St. Giacomo
+
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 45.985559, 9.259893
+      label: Bellagio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Villa del Balbianello, Lenno, Italy
+      label: Villa del Balbianello
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 46.011518, 9.282984
+      label: Passerella Innamorati Sul Lago
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Lake Como Peace Lodge, Via Monsignor E. Poletti, 71, 22017 Menaggio CO, Italy
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 46.017164, 9.236898
+      label: Menaggio Ferry Terminal
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 46.013728, 9.283007
+      label: Varenna Ferry Terminal
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Varenna Esino, 23828 Perledo LC, Italy
+      label: Varenna Train Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Milano Centrale
+      label: Milano Centrale Station
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Verona Porta Nuova
+      label: Verona Porta Nuova Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Corso Porta Nuova, Verona, Italy
+      label: Corso Porta Nuova
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Piazza Bra, Verona, Italy
+      label: Piazza Bra
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Arena di Verona, Verona, Italy
+      label: Arena di Verona
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Casa di Giulietta, Ingresso dal Teatro Nuovo in Piazzetta Navona, Via Cappello, 23, 37121 Verona VR, Italy
+      label: Casa di Giulietta
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Torre dei Lamberti, Via della Costa, 1, 37121 Verona VR, Italy
+      label: Torre dei Lamberti
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Piazza delle Erbe, Piazza Erbe, 37121 Verona VR, Italy
+      label: Piazza delle Erbe
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica of Santa Anastasia, Piazza S.Anastasia, 37121 Verona VR, Italy
+      label: Basilica of Santa Anastasia
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte Pietra, Verona, Italy
+      label: Ponte Pietra
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Castel San Pietro, Verona, Italy
+      label: Castel San Pietro
+
+  - mode: walk
+    duration: 6
+
+    to:
+      name: Verona Porta Nuova, Verona, Italy
+      label: Verona Porta Nuova Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Ponte della Costituzione, Venice, Italy
+      label: Ponte della Costituzione
+      
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte degli Scalzi, Venice, Italy
+      label: Ponte degli Scalzi
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte delle Tette, Venice, Italy
+      label: Ponte delle Tette
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Ponte di Rialto, Venice, Italy
+      label: Ponte di Rialto
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica di San Marco, Venice, Italy
+      label: Basilica di San Marco
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Doge's Palace, P.za San Marco, 1, 30124 Venezia VE, Italy
+      label: Palazzo Ducale
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Basilica S.Maria Gloriosa dei Frari, Venice, Italy
+      label: Basilica S.Maria Gloriosa dei Frari
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Venezia Mestre, Venice, Italy
+      label: Venezia Mestre Station
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Anda Venice Hostel, Venice, Italy
+      label: Hostel
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Venezia Mestre, Venice, Italy
+      label: Venezia Mestre Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Venezia Santa Lucia, Venice, Italy
+      label: Venezia Santa Lucia Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Piazza San Marco, Venice, Italy
+      label: Piazza San Marco
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.442792, 12.341027
+      label: F.te Nove "d" Station
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Burano "C", Burano, Italy
+      label: Burano "C" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Tre Ponti, Burano, Italy
+      label: Tre Ponti
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Ponte degli Assassini, Burano, Italy
+      label: Ponte degli Assassini
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 45.484480, 12.418681
+      label: Chiesa Parrocchiale di San Martino Vescovo
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Burano "C", Burano, Italy
+      label: Burano "C" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Murano Faro "A", Murano, Italy
+      label: Murano Faro "A" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: La Perla Ai Bisatei, Campo S. Bernardo, 5/6, 30141 Venezia VE, Italy
+      label: La Perla Ai Bisatei
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Duomo Basilica dei Santi Maria e Donato, Murano, Italy
+      label: Duomo Basilica dei Santi Maria e Donato
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vetreria Artistica Colleoni, Murano, Italy
+      label: Vetreria Artistica Colleoni Glass Factory
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Murano Colonna "B", Murano, Italy
+      label: Murano Colonna "B" Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: VCE Airport, Venice, Italy
+      label: Venice Marco Polo Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

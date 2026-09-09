@@ -1,0 +1,365 @@
+fps: 30
+dpi: 300
+
+segments:
+  - mode: bus
+    duration: 2.5
+
+    from:
+      name: University of Limerick
+      label: University of Limerick
+
+    to:
+      name: 53.316722, -6.370691
+      label: Red Cow Luas
+
+    color: "#A8246D"
+
+  - mode: bus
+    duration: 1.5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: plane
+    duration: 5
+    to:
+      name: OSL airport
+      label: Oslo Airport
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Oslo Central Station, Norway
+      label: Oslo Central Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Sofienberg Kirke, Oslo, Norway
+      label: Sofienberg Kirke
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: walk
+    duration: 5
+
+    to:
+      name: Oslo Opera House, Kirsten Flagstads plass 1, 0150 Oslo, Norway
+      label: Oslo Opera House
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: Deichman Bjørvika, Oslo, Norway
+      label: Deichman Bjørvika
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Stortinget, Oslo, Norway
+      label: Stortinget
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nationaltheatret, Oslo, Norway
+      label: Nationaltheatret
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Nobels Fredssenter, Oslo, Norway
+      label: Nobels Fredssenter
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.898747, 10.730895
+      label: Hovedøya Port
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Hovedøya kloster, Oslo, Norway
+      label: Hovedøya kloster
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.893840, 10.726664
+      label: Hovedøya badeplass
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.892339, 10.727634
+      label: Østre kanonbatteri
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lavetthuset, Hovedøya, Oslo, Norway
+      label: Lavetthuset
+
+  - mode: walk
+    duration: 2
+
+    to:
+      name: 59.898747, 10.730895
+      label: Hovedøya Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.890533, 10.719178
+      label: Lindøya øst Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.887769, 10.702180
+      label: Lindøya stupebrett
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Lindøya vest, Oslo, Norway
+      label: Lindøya vest Port
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.902474, 10.741604
+      label: Vippa
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Akershus Fortress, Oslo, Norway
+      label: Akershus Fortress
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: Vettakollen, 0781 Oslo, Norway
+      label: Vettakollen Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.968027, 10.699384
+      label: Vettakollen Viewpoint
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vettakollen, 0781 Oslo, Norway
+      label: Vettakollen Station
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.913064, 10.761688
+      label: Grønland Neighbourhood
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: bus
+    duration: 4
+
+    to:
+      name: Backstube Kvadraturen, Prinsens gate 12, 0152 Oslo, Norway
+      label: Backstube Kvadraturen
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Nasjonalmuseet, Oslo, Norway
+      label: Nasjonalmuseet
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Det kongelige slott, Oslo, Norway
+      label: Det kongelige slott
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Uranienborg Church, Oslo, Norway
+      label: Uranienborg Church
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Vigelandsparken, Oslo, Norway
+      label: Vigelandsparken
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: Oslo Domkirke, Oslo, Norway
+      label: Oslo Domkirke
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.911249, 10.749275
+      label: Karl Johans gate
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: Waldemar Thranes gate 8, 0171 Oslo, Norway
+      label: Restaurant Schrøder
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Bunks at Rode, Københavngata 10, 0566 Oslo, Norway
+      label: Hostel
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Langkaia 1, 0150 Oslo, Norway
+      label: SALT Sauna
+
+  - mode: bus
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: walk
+    duration: 4
+
+    to:
+      name: 59.884416, 10.724311
+      label: Gressholmen Port
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.910879, 10.730220
+      label: Aker Brygge Port
+
+  - mode: train
+    duration: 5
+
+    to:
+      name: 59.979116, 10.676130
+      label: Frognerseteren Station
+
+  - mode: walk
+    duration: 3
+
+    to:
+      name: Frognerseteren Café & Restaurant, Holmenkollveien 200, 0791 Oslo, Norway
+      label: Frognerseteren Café
+  
+  - mode: walk
+    duration: 3
+
+    to:
+      name: 59.979116, 10.676130
+      label: Frognerseteren Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: 59.929965, 10.714851
+      label: Majorstuen Station
+
+  - mode: train
+    duration: 4
+
+    to:
+      name: Sognsvann lake, 0890 Oslo, Norway
+      label: Sognsvann lake
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: Oslo Central Station, Norway
+      label: Oslo Central Station
+
+  - mode: train
+    duration: 3
+
+    to:
+      name: OSL airport
+      label: Oslo Airport
+
+  - mode: plane
+    duration: 5
+
+    to:
+      name: DUB Airport
+      label: Dublin Airport
+
+  - mode: bus
+    duration: 2
+
+    to:
+      name: University of Limerick
+      label: University of Limerick

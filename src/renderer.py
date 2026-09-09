@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import contextily as ctx
 from svg_pltmarker import get_marker_from_svg
 
-from util import icons_dir, map_source
+from util import icons_dir, map_source, darken_hex_color
 
 
 # Make custom markers for matplotlib scatter() and plot() calls from svg images.
@@ -24,6 +24,12 @@ MODE_CURSOR_MARKERS = {
 	),
 	"plane_right": get_marker_from_svg(
 		filepath=os.path.join(icons_dir, "airplane_right.svg")
+	),
+	"bike": get_marker_from_svg(
+		filepath=os.path.join(icons_dir, "walk_icon.svg")
+	),
+	"car": get_marker_from_svg(
+		filepath=os.path.join(icons_dir, "bus_train_icon.svg")
 	),
 	"bus": get_marker_from_svg(
 		filepath=os.path.join(icons_dir, "bus_train_icon.svg")
@@ -176,9 +182,7 @@ class Renderer:
 		cities,
 		mode,
 		completed_routes=None,
-		arrived=False,
-		marker_color="darkorange",
-		animated_marker_color="orange",
+		cursor_colors=[],
 		marker_size=300,
 		cursor_size=500,
 		show_labels=True,
@@ -281,6 +285,10 @@ class Renderer:
 
 			txs, tys = [], []
 
+		animated_marker_color = "#DB8500" # default orange
+		if cursor_colors and len(cursor_colors) == len(cities) and cursor_colors[0] is not None:
+			animated_marker_color = cursor_colors[0]
+
 		if self._traveled_route_line is None:
 
 			self._traveled_route_line, = self.ax.plot(
@@ -309,6 +317,14 @@ class Renderer:
 		offsets = [(x, y) for _, x, y in cities]
 
 		if self._waypoint_pins is None:
+			marker_color = cursor_colors if cursor_colors and len(cursor_colors) == len(cities) else [animated_marker_color] * len(cities)
+
+			# Replace all Nones with animated_marker_color for consistency
+			marker_color = [animated_marker_color if c is None else c for c in marker_color]
+
+			# Make colors slightly darker than the animation cursor color for better contrast against the cursor.
+			marker_color = [darken_hex_color(c, 5.0) for c in marker_color]
+
 			self._waypoint_pins = self.ax.scatter(
 				[p[0] for p in offsets],
 				[p[1] for p in offsets],

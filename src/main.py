@@ -7,12 +7,9 @@ import multiprocessing
 from concurrent.futures import ProcessPoolExecutor
 from tqdm import tqdm, trange
 from plyer import notification
-import urllib.request
+from dotenv import load_dotenv
 
-# Provide a unique application name and contact info (as required by OSM policy)
-opener = urllib.request.build_opener()
-opener.addheaders = [('User-Agent', 'MyMapAnimationScript/1.0 (saptak.das625@gmail.com)')]
-urllib.request.install_opener(opener)
+load_dotenv()
 
 from util import root_dir, data_dir, output_dir
 from build_trip import make_json_trip_file_from_yaml
@@ -29,8 +26,9 @@ def main():
 
     start_time = time.time()
 
-    yaml_file = os.path.join(data_dir, "yaml", "europe_week1.yaml")
-    json_file = os.path.join(data_dir, "json", "trip.json")
+    file_name = "europe_combined.yaml"
+    yaml_file = os.path.join(data_dir, "yaml", file_name)
+    json_file = os.path.join(data_dir, "json", file_name.replace(".yaml", ".json"))
 
     # ---------------------------------------------------------
     # Build trip from YAML
@@ -55,6 +53,8 @@ def main():
     durations = []
     modes = []
     cities = []
+    cursor_colors = []
+    current_color = None
     for segment_i, segment in enumerate(trip.segments):
 
         route = route_generator.generate(
@@ -64,6 +64,9 @@ def main():
         routes.append(route)
         durations.append(segment["duration"])
         modes.append(segment["mode"])
+        if "color" in segment:
+            current_color = segment["color"]
+        cursor_colors.append(current_color)
         start = route[0]
         end = route[-1]
 
@@ -79,6 +82,9 @@ def main():
 
         if segment_i == 0:
             camera.set_position(start[0], start[1], zoom=6)
+
+    if cursor_colors:
+        cursor_colors = [cursor_colors[0]] + cursor_colors # Add the first color again at the start to ensure the first stop has a cursor color
 
     # ---------------------------------------------------------
     # Animation settings
@@ -110,9 +116,9 @@ def main():
         except Exception as e:
             print(f"Failed deleting {file_path}: {e}")
 
-    video_file = os.path.join(output_dir, "travel.mp4")
-    if os.path.exists(video_file):
-        os.remove(video_file)
+    video_filepath = os.path.join(output_dir, f"travel_{file_name.replace('.yaml', '')}.mp4")
+    if os.path.exists(video_filepath):
+        os.remove(video_filepath)
 
     frame_counter = 0
 
@@ -164,7 +170,8 @@ def main():
             dpi,
             camera.x, camera.y, camera.zoom,
             first_route, [], first_start,
-            cities[:1], modes[0], [], False,
+            cities[:1], modes[0], [],
+            cursor_colors[:1],
             True, True, True
         ))
         frame_counter += 1
@@ -179,77 +186,78 @@ def main():
         # TRAVEL ANIMATION
         # =====================================================
 
-        for segment_ind, (route, duration, mode) in enumerate(zip(routes, durations, modes)):
+        # for segment_ind, (route, duration, mode) in enumerate(zip(routes, durations, modes)):
 
-            travel_frames = int(duration * fps)
+        #     travel_frames = int(duration * fps)
 
-            # Routes for every segment already finished before this
-            # one -- fixed for the whole segment, so compute once.
-            completed_routes = routes[:segment_ind]
+        #     # Routes for every segment already finished before this
+        #     # one -- fixed for the whole segment, so compute once.
+        #     completed_routes = routes[:segment_ind]
 
-            # -------------------------------------------------
-            # Pass 1 (sequential, cheap): advance the camera
-            # frame by frame and record only what rendering
-            # needs. This MUST stay sequential -- move_towards()
-            # smooths from the camera's own previous state, and
-            # CameraController carries state across calls (e.g.
-            # flight entry-zoom capture). Parallelizing this
-            # part would desync the camera path.
-            # -------------------------------------------------
+        #     # -------------------------------------------------
+        #     # Pass 1 (sequential, cheap): advance the camera
+        #     # frame by frame and record only what rendering
+        #     # needs. This MUST stay sequential -- move_towards()
+        #     # smooths from the camera's own previous state, and
+        #     # CameraController carries state across calls (e.g.
+        #     # flight entry-zoom capture). Parallelizing this
+        #     # part would desync the camera path.
+        #     # -------------------------------------------------
 
-            frame_args = []
+        #     frame_args = []
 
-            for frame in trange(travel_frames, desc=f"Simulating camera ({segment_ind+1}/{len(routes)})"):
+        #     for frame in trange(travel_frames, desc=f"Simulating camera ({segment_ind+1}/{len(routes)})"):
 
-                t = frame / (travel_frames - 1)
-                index = int(t * (len(route) - 1))
-                position = route[index]
-                traveled_route = route[:index + 1]
-                arrived = (frame == travel_frames - 1)
+        #         t = frame / (travel_frames - 1)
+        #         index = int(t * (len(route) - 1))
+        #         position = route[index]
+        #         traveled_route = route[:index + 1]
+        #         arrived = (frame == travel_frames - 1)
 
-                camera_controller.update(
-                    camera, mode, route, t,
-                    total_frames=travel_frames
-                )
+        #         camera_controller.update(
+        #             camera, mode, route, t,
+        #             total_frames=travel_frames
+        #         )
 
-                if arrived and mode == "plane":
-                    dest = route[-1]
-                    camera.set_position(
-                        dest[0], dest[1],
-                        zoom=camera_controller.flight["end_zoom"]
-                    )
+        #         if arrived and mode == "plane":
+        #             dest = route[-1]
+        #             camera.set_position(
+        #                 dest[0], dest[1],
+        #                 zoom=camera_controller.flight["end_zoom"]
+        #             )
 
-                frame_path = os.path.join(frames_dir, f"frame_{frame_counter:05}.png")
+        #         frame_path = os.path.join(frames_dir, f"frame_{frame_counter:05}.png")
 
-                # Every stop already reached, plus -- only once we
-                # actually arrive -- this segment's destination.
-                # Stays visible on every later segment too, since
-                # this slice only ever grows as segment_ind grows.
-                visible_cities = cities[segment_ind:segment_ind + 2]
+        #         # Every stop already reached, plus -- only once we
+        #         # actually arrive -- this segment's destination.
+        #         # Stays visible on every later segment too, since
+        #         # this slice only ever grows as segment_ind grows.
+        #         visible_colors = cursor_colors[segment_ind:segment_ind + 2]
+        #         visible_cities = cities[segment_ind:segment_ind + 2]
 
-                frame_args.append((
-                    frame_path,
-                    dpi,
-                    camera.x, camera.y, camera.zoom,
-                    route, traveled_route, position,
-                    visible_cities, mode, completed_routes, arrived,
-                    True, True, True
-                ))
+        #         frame_args.append((
+        #             frame_path,
+        #             dpi,
+        #             camera.x, camera.y, camera.zoom,
+        #             route, traveled_route, position, 
+        #             visible_cities, mode, completed_routes,
+        #             visible_colors, True, True, True
+        #         ))
 
-                frame_counter += 1
+        #         frame_counter += 1
 
-            # -------------------------------------------------
-            # Pass 2 (parallel): drawing + PNG encoding is the
-            # slow, CPU-bound, per-frame-independent part -- now
-            # that every frame's camera state and filename are
-            # already pinned down, farm it out across processes.
-            # -------------------------------------------------
+        #     # -------------------------------------------------
+        #     # Pass 2 (parallel): drawing + PNG encoding is the
+        #     # slow, CPU-bound, per-frame-independent part -- now
+        #     # that every frame's camera state and filename are
+        #     # already pinned down, farm it out across processes.
+        #     # -------------------------------------------------
 
-            list(tqdm(
-                executor.map(render_and_save_frame, frame_args),
-                total=len(frame_args),
-                desc=f"Rendering travel ({segment_ind+1}/{len(routes)})"
-            ))
+        #     list(tqdm(
+        #         executor.map(render_and_save_frame, frame_args),
+        #         total=len(frame_args),
+        #         desc=f"Rendering travel ({segment_ind+1}/{len(routes)})"
+        #     ))
 
         # =====================================================
         # OUTRO
@@ -270,6 +278,21 @@ def main():
         #   No cursor.
         #   No current/final route.
         #
+
+        # Filter any cities that not in Europe (longitude too far east will be removed.)
+        # cities = [city for city in cities if -20 <= city[1]]
+        filtered_cities = []
+        filtered_cursor_colors = []
+        for city, color in zip(cities, cursor_colors):
+            # print(f"City: {city[0]}, Lon: {city[1]}, Lat: {city[2]}, Color: {color}")
+            if city[1] >= -2_000_000:  # Keep cities with longitude >= -20
+                filtered_cities.append(city)
+                filtered_cursor_colors.append(color)
+            else:
+                print(f"Filtering out city: {city[0]} with longitude {city[1]}")
+
+        cities = filtered_cities
+        cursor_colors = filtered_cursor_colors
 
         last_route = routes[-1]
         last_end = last_route[-1]
@@ -313,7 +336,7 @@ def main():
         )
 
         # Extra breathing room around the outermost markers.
-        required_height *= 1.20
+        required_height *= 1.05
 
         if required_height > 0:
 
@@ -328,9 +351,10 @@ def main():
 
         # Prevent an excessively distant view.
         full_trip_zoom = max(
-            0.05,
+            0.07,
             min(20.0, full_trip_zoom)
         )
+        print(f"Full-trip center: ({full_trip_center_x}, {full_trip_center_y}), zoom: {full_trip_zoom}")
 
         # -----------------------------------------------------
         # IMPORTANT:
@@ -468,7 +492,7 @@ def main():
                 cities,
                 modes[-1],
                 [],
-                True,
+                cursor_colors,
                 False,  # show_labels
                 False,  # show_cursor
                 False,  # show_current_route
@@ -495,13 +519,13 @@ def main():
         print('Skipping video generation.')
     else:
         print('Starting video generation...')
-        animate_frames(fps)
+        animate_frames(video_filepath, fps)
         print('Video generation completed. Check the output folder for the video file.')
     print(f"Total time taken: {time.time() - start_time:.2f} seconds")
 
     notification.notify(
         title='Map Animator',
-        message=f'Video generation completed after {time.time() - start_time:.2f} seconds. Check the output folder for the video file.',
+        message=f'Video generation completed after {time.time() - start_time:.2f} seconds. Check the output folder for the frames and the video file (if generated).',
         timeout=10
     )
 
